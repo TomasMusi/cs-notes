@@ -166,3 +166,45 @@ Způsob, jakým program činí rozhodnutí nebo opakuje akce na základě podmí
 > **Shrnutí:**  
 > Řídicí příkazy existují, protože procesor potřebuje možnost **měnit tok instrukcí** podle aktuální situace (stav proměnných, vstup od uživatele, data ze senzorů).  
 
+## Funkce 
+
+### Proč Používat Funkce?
+
+- **Zamezení opakování kódu** – vyhýbání se duplikování stejné logiky
+- **Modularita** – kód je rozdělený na logické části (snáze se čte i ladí)
+- **Srozumitelnost** – jasně pojmenovaná funkce napoví, co dělá, bez nutnosti číst detaily
+
+
+### Vstupy a výstupy
+
+- **Parametry (argumenty)** – hodnoty předané funkci při volání
+- **Návratová hodnota** – výstup, který funkce vrací volajícímu kódu
+
+
+
+```cpp
+// C++
+
+// Deklarace a definice funkce
+int add(int a, int b) {
+    return a + b;  // Vrací součet obou parametrů
+}
+
+// Volání funkce
+std::cout << add(2, 3);  // Výstup: 5
+```
+
+> **Poznámka:**  
+> V některých programovacích jazycích je nutné při deklaraci funkce nebo proměnné **uvést datový typ** (např. `int`, `float`, `string`), protože tyto jazyky používají **statické typování**.  
+> Příklady: `C`, `C++`, `Java`, `C#`
+>
+> Naopak existují jazyky s **dynamickým typováním**, kde se typ proměnné určuje automaticky podle přiřazené hodnoty.  
+> Příklady: `Python`, `JavaScript`, `Ruby`
+>
+> V dynamicky typovaných jazycích neuvádíš typ proměnné – například:
+> ```python
+> # Python
+> x = 5          # Python automaticky rozpozná, že x je typu int
+> def add(a, b): # žádné typy u parametrů
+>     return a + b
+> ```
