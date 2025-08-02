@@ -48,7 +48,21 @@ Složitější datové struktury složené z primitivních typů. Jejich velikos
 | `dictionary`      | Kolekce dvojic klíč–hodnota, klíče jsou unikátní                       | `{"jméno": "Anna", "věk": 25}`   |
 | `class` / `object`| Uživatelsky definovaný typ s vlastnostmi a metodami                    | `Person(name, age)`              |
 
+```python
+# Python
+a = 5             # int
+b = 3.14          # float
+c = "hello"       # string
+d = True          # boolean
+```
 
+```cpp 
+// C++
+int a = 5;
+float b = 3.14f;
+std::string c = "hello";
+bool d = true;
+```
 
 *Tip*: V některých jazycích (např. C, Java) je potřeba typ proměnné definovat při deklaraci. V jiných (např. Python, JavaScript) je určován automaticky podle přiřazené hodnoty.
 
