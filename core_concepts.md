@@ -66,6 +66,28 @@ bool d = true;
 
 *Tip*: V některých jazycích (např. C, Java) je potřeba typ proměnné definovat při deklaraci. V jiných (např. Python, JavaScript) je určován automaticky podle přiřazené hodnoty.
 
+## Operátory
+
+Operátory jsou symboly, které provádějí operace s proměnnými a hodnotami.
+
+### Typy operátorů
+
+| Typ operátoru  | Popis                                         | Příklady                                 |
+|----------------|-----------------------------------------------|-------------------------------------------|
+| **Aritmetické** | Základní matematické výpočty                  | `+`, `-`, `*`, `/`, `%`                   |
+| **Relační**     | Porovnání dvou hodnot (vrací `true`/`false`) | `==`, `!=`, `<`, `>`, `<=`, `>=`          |
+| **Logické**     | Práce s pravdivostními hodnotami              | `and`, `or`, `not` *(Python)*<br>`&&`, `||`, `!` *(C++/Java)* |
+| **Přiřazovací** | Přiřazení a změna hodnoty proměnné            | `=`, `+=`, `-=`, `*=`, `/=`, `%=`         |
+| **Unární / Binární** | Podle počtu operandů (1 / 2)              | `-a` (unární), `a + b` (binární)          |
+
+---
+
+```cpp
+// C++
+int a = 5 + 3;              // Aritmetický operátor (+), přiřazení (=)
+if (a > 5 && a < 10) {      // Relační operátory (> , <), logický operátor (&&)
+    std::cout << "Valid";   // Výstup na obrazovku
+}
 
 
 
