@@ -80,6 +80,7 @@ Operátory jsou symboly, které provádějí operace s proměnnými a hodnotami.
 | **Přiřazovací**      | Přiřazení a změna hodnoty proměnné            | `=`, `+=`, `-=`, `*=`, `/=`, `%=`                          |
 | **Unární / Binární** | Podle počtu operandů (1 / 2)                  | `-a` (unární), `a + b` (binární)                           |
 
+- *Poznámka*: Operátory mohou mít různé priority a asociativitu, což ovlivňuje pořadí vyhodnocení ve výrazu. Například násobení (*) má vyšší prioritu než sčítání (+).
 
 ---
 
@@ -89,6 +90,126 @@ int a = 5 + 3;              // Aritmetický operátor (+), přiřazení (=)
 if (a > 5 && a < 10) {      // Relační operátory (> , <), logický operátor (&&)
     std::cout << "Valid";   // Výstup na obrazovku
 }
+```
+
+## Řízení Toku
+
+Způsob, jakým program činí rozhodnutí nebo opakuje akce na základě podmínek.
+
+Klíčové řídicí příkazy
+
+if, else if, else
+
+switch (Java/C++)
+
+Loops: for, while, do while
 
 
+```cpp
+// C++
+int x = 10;
+if (x > 5) {
+    std::cout << "Greater";
+} else {
+    std::cout << "Smaller";
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## 🔁 Řízení Toku
+
+Řízení toku určuje, jak program rozhoduje, které části kódu se vykonají a kolikrát.  
+Na úrovni **hardwaru** se tato logika překládá do **podmíněných skoků** a **opakovacích instrukcí** procesoru.  
+Bez řízení toku by program běžel sekvenčně od začátku do konce bez možnosti větvení nebo opakování.
+
+---
+
+### 📌 Hlavní řídicí konstrukce
+
+- **`if`, `else if`, `else` – Podmíněné vykonání**
+  - **Kdy použít:** Pokud potřebuješ provést různé akce podle hodnoty proměnné nebo výsledku výrazu.
+  - **Příklad:**
+    ```cpp
+    if (teplota > 100) {
+        vypnoutOhrev(); // chrání hardware před přehřátím
+    } else if (teplota > 50) {
+        zpomalitOhrev();
+    } else {
+        zapnoutOhrev();
+    }
+    ```
+---
+
+- **`switch` – Více větví rozhodování**
+  - **Kdy použít:** Pokud máš více pevných hodnot, podle kterých chceš provést různé akce (např. reakce na klávesy, režimy zařízení).
+  - **Příklad:**
+    ```cpp
+      char key = 'A';
+      switch (key) {
+        case 'W': moveUp(); break;
+        case 'S': moveDown(); break;
+        case 'A': moveLeft(); break;
+        case 'D': moveRight(); break;
+        default:  idle(); break; // default, pakliže, by zmáčkl jakoukoli jinou klávesu.
+      }
+    ```
+---
+
+- **`for` – Cyklus s počítadlem**
+  - **Kdy použít:** Pokud potřebuješ vykonat blok kódu pevně daný počet opakování (např. čtení 100 hodnot ze senzoru).
+  - **Příklad:**
+    ```cpp
+    for (int i = 0; i < 100; i++) {
+        nactiHodnotuZeSenzoru();
+    }
+    ```
+  - **Souvislost s hardwarem:** Procesor provádí opakované *inkrementace* a *porovnání*, poté *skok zpět* na začátek cyklu.
+
+---
+
+- **`while` – Cyklus s podmínkou před vstupem**
+  - **Kdy použít:** Pokud nevíš, kolikrát se cyklus provede, ale má běžet dokud platí určitá podmínka.
+  - **Příklad:**
+    ```cpp
+    while (teplota < 80) {
+        zapnoutOhrev();
+    }
+    ```
+---
+
+- **`do while` – Cyklus s podmínkou po provedení**
+  - **Kdy použít:** Pokud potřebuješ, aby se kód provedl alespoň jednou, bez ohledu na počáteční stav podmínky.
+  - **Příklad:**
+    ```cpp
+    do {
+        prectiDataZeSeriovehoPortu();
+    } while (!dataPlatna());
+    ```
+  ---
+
+> **Shrnutí:**  
+> Řídicí příkazy existují, protože procesor potřebuje možnost **měnit tok instrukcí** podle aktuální situace (stav proměnných, vstup od uživatele, data ze senzorů).  
 
