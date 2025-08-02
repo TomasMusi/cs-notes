@@ -38,12 +38,15 @@ Základní, vestavěné typy dostupné ve většině programovacích jazyků:
 
 Složitější datové struktury složené z primitivních typů. Jejich velikost je proměnlivá a závisí na obsahu:
 
-| Typ         | Popis                                                 | Příklad                  | Velikost (bajty)       |
-|-------------|--------------------------------------------------------|---------------------------|--------------------------|
-| `string`    | Sekvence znaků (`char[]`)                             | `"Ahoj"`                  | Závisí na délce + metadata *(např. 5+)* |
-| `array`     | Pevně velké pole prvků stejného typu                  | `[1, 2, 3]`               | `počet prvků × velikost typu` |
-| `list`      | Dynamická kolekce (např. spojový seznam, vektor)      | `[1, 2, 3]`               | Různé (např. 24 bajtů + data) |
-| `class` / `object` | Uživatelsky definovaný typ – obsahuje vlastnosti a metody | `Person(name, age)`       | Závisí na polích + referencích |
+| Typ               | Popis                                                                 | Příklad                          |
+|-------------------|------------------------------------------------------------------------|-----------------------------------|
+| `string`          | Sekvence znaků (`char[]`), často reprezentuje text                     | `"Ahoj"`                          |
+| `array`           | Pole s pevnou délkou, typicky s prvky stejného typu. V některých jazycích (např. Python, JavaScript) může obsahovat různé datové typy. | `[1, 2, 3]` nebo `[1, "dva", True]` |
+| `list`            | Dynamická kolekce, umožňuje přidávat/ubírat prvky, často řazená        | `[1, 2, 3]`                       |
+| `tuple`           | Neměnitelná (immutable) sekvence – po vytvoření nelze měnit obsah      | `(1, "Ahoj", True)`              |
+| `set`             | Neřazená množina unikátních hodnot (žádné duplikáty)                   | `{1, 2, 3}`                       |
+| `dictionary`      | Kolekce dvojic klíč–hodnota, klíče jsou unikátní                       | `{"jméno": "Anna", "věk": 25}`   |
+| `class` / `object`| Uživatelsky definovaný typ s vlastnostmi a metodami                    | `Person(name, age)`              |
 
 
 
