@@ -96,58 +96,11 @@ if (a > 5 && a < 10) {      // Relační operátory (> , <), logický operátor 
 
 Způsob, jakým program činí rozhodnutí nebo opakuje akce na základě podmínek.
 
-Klíčové řídicí příkazy
-
-if, else if, else
-
-switch (Java/C++)
-
-Loops: for, while, do while
-
-
-```cpp
-// C++
-int x = 10;
-if (x > 5) {
-    std::cout << "Greater";
-} else {
-    std::cout << "Smaller";
-}
-```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## 🔁 Řízení Toku
-
 Řízení toku určuje, jak program rozhoduje, které části kódu se vykonají a kolikrát.  
-Na úrovni **hardwaru** se tato logika překládá do **podmíněných skoků** a **opakovacích instrukcí** procesoru.  
-Bez řízení toku by program běžel sekvenčně od začátku do konce bez možnosti větvení nebo opakování.
 
 ---
 
-### 📌 Hlavní řídicí konstrukce
+### Hlavní řídicí konstrukce
 
 - **`if`, `else if`, `else` – Podmíněné vykonání**
   - **Kdy použít:** Pokud potřebuješ provést různé akce podle hodnoty proměnné nebo výsledku výrazu.
