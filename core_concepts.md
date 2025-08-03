@@ -309,3 +309,15 @@ Aby nevznikl chaos ve schránce, musíme to nějak vyřešit:
 - **V nejhorším případě**: až **O(n)** – pokud dojde k mnoha kolizím a všechny položky skončí v jednom řetězci (např. **linked list**), musíme projít celý seznam hodnot ručně
 
 ---
+
+## Binary Search Tree
+
+- Každý uzel se řídí specifickým pravidlem řazení: levé dítě musí obsahovat hodnoty menží než rodič, a pravé dítě musí obsahovat hodnoty větší, než rodič, což činí vyhledávání, vkládání a mazání extrémně efektivním.
+- Vyhledávání, vložení, mazání: **O(log n)** – pokud je strom **vyvážený**
+- Vzhledem k Pravidlům, že levý rodič a pravé dítě musí být menší než jeden druhý, pří každém přístupu k prvku, vkládání prvku nebo mazání prvku můžeme doslova eliminovat polovinu stromu, když jim procházíme.
+- V nejhorším případě (strom = linked list) až **O(n)**
+
+### Vlastnost:
+Každým krokem eliminuješ polovinu prvků (binary search)
+
+---
