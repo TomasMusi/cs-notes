@@ -208,3 +208,104 @@ std::cout << add(2, 3);  // Výstup: 5
 > def add(a, b): # žádné typy u parametrů
 >     return a + b
 > ```
+
+
+## Datové Struktury
+
+Datové struktury jsou **základem algoritmického myšlení**. Správná volba ovlivňuje **výkon** programu i **čitelnost** kódu.
+
+Používáme je k organizaci dat tak, aby byly přístupné, manipulovatelné a efektivně spravované.
+
+---
+
+### Array
+
+> *Představ si školní chodbu se skříňkami – každá má své číslo (index) a pevné místo.*
+
+- Prvky jsou v paměti uloženy **souvisle za sebou**
+- Přístup podle indexu je **extrémně rychlý: O(1)**
+- **Nevýhoda:** Pokud je pole plné, je potřeba vytvořit nové a staré přepsat → **kopírování: O(n)**
+
+```text
+Původní pole: [1, 2, 3]
+Nové pole po přidání 4: [1, 2, 3, 4]
+```
+
+- Vymazání prvku = posunutí všech následujících → **O(n)**  
+  *(mazání na konci je ale O(1))*
+
+---
+
+### Linked List
+
+> *Představ si vlak, kde musíš projít každý vagon, než najdeš ten správný.*
+
+- Každý prvek (**uzel**) obsahuje hodnotu + ukazatel (*Pointer*) na další
+- Přístup k náhodnému prvku: **O(n)** (musíš projít všechny, aby jsi na něj narazil)
+- Vložení/mazání uprostřed seznamu: **O(1)** – stačí upravit ukazatele
+
+---
+
+### Stack (Zásobník)
+
+> *Jako věž z chipsů – poslední chips položený navrch bude první, který sníš.*
+
+- **LIFO – Last In, First Out**
+- Pokud bych chtěl ve výše zmíněné analogii se dostat na spodek balíčku, musel bych postupně zvrchu dolů všechny sníst.
+- `push()` a `pop()` Přídávání a Odebírání **O(1)**
+- Hledání prvku = **O(n)**
+
+---
+
+### Queue (Fronta)
+
+> *Řada u pokladny – kdo přijde první, ten jde první.*
+
+- **FIFO – First In, First Out**
+- Když přijdou nové data musí se zařadit do zadu, stejně jako v řadě u pokladny.
+- Přidávání (`enqueue`) na konec, odebírání (`dequeue`) z počátku → **O(1)**
+- Nelze libovolně přistupovat k prvkům (jako v arrayi)
+
+---
+
+### Heap (Prioritní fronta)
+
+> *Představ si pyramidu z krabic, kde nahoře je vždy nejmenší nebo největší krabice.*
+
+- **Min Heap**: rodič < děti  
+  **Max Heap**: rodič > děti
+- Přístup k nejvyšší prioritě (root): **O(1)**
+- Přístup k k libovolným prvkům v heapu: **0(n)**
+- Vložení/mazání: **O(log n)** – kvůli nutnému „přebudování“ pyramidy (díky vlastnosti heapu, kdy vztah rodič-dítě je vetší nebo menší se posune na správnou pozici. Heapy jsou ve skutečnosti vyvážené binární stromy.)
+- extrémně efektivní jsou operace mazání a vkládání ve srovnání s lineárními datovými strukturami, jako jsou arraye nebo linked lists.
+
+---
+
+### Hashmap
+
+> *Představ si kancelář, kde má každý zaměstnanec svoji poštovní schránku s číslem.  
+> Když přijde dopis pro Johna, místo procházení všech schránek víš rovnou, že John má schránku č. 4.  
+> Sally má schránku č. 5. Každý přesně ví, kam co patří.*
+
+HashMap je datová struktura, která ukládá hodnoty na základě **klíčů**. Pomocí tzv. **hashovací funkce** se vypočítá, **kam v paměti se daný klíč uloží**.
+
+- Ukládá **klíč–hodnota** páry (`key -> value`)
+- Díky hashovací funkci je možné najít hodnotu extrémně rychle → **O(1)**
+- Umožňuje rychlý přístup, přidání i smazání položky
+
+#### Hashovací kolize – co když dvě osoby chtějí stejnou schránku?
+
+> *Představ si, že přijde nový zaměstnanec Andy. Jméno „Andy“ má stejně jako „John“ čtyři písmena.  
+> Pokud by hashovací funkce určovala číslo schránky podle délky jména, oba by skončili na pozici č. 4.*
+
+To je tzv. **kolize** – situace, kdy dva různé klíče směřují na stejnou pozici.  
+Aby nevznikl chaos ve schránce, musíme to nějak vyřešit:
+
+##### Možnosti řešení kolizí:
+- **Řetězení (chaining):** ve schránce bude malý „seznam dopisů“ – více položek na jednom místě
+- **Lineární prohledávání:** pokud je schránka obsazená, hledáme další volnou (č. 5, č. 6, …)
+
+- **Přístup k prvku podle klíče**: běžně **O(1)** – přesně víme, kam jít
+- **V nejhorším případě**: až **O(n)** – pokud dojde k mnoha kolizím a všechny položky skončí v jednom řetězci (např. **linked list**), musíme projít celý seznam hodnot ručně
+
+---
