@@ -287,7 +287,7 @@ Nové pole po přidání 4: [1, 2, 3, 4]
 > Když přijde dopis pro Johna, místo procházení všech schránek víš rovnou, že John má schránku č. 4.  
 > Sally má schránku č. 5. Každý přesně ví, kam co patří.*
 
-HashMap je datová struktura, která ukládá hodnoty na základě **klíčů**. Pomocí tzv. **hashovací funkce** se vypočítá, **kam v paměti se daný klíč uloží**.
+HashMap je datová struktura, která ukládá hodnoty podle unikátních klíčů. K určení pozice pro uložení klíče se používá hashovací funkce, která převádí klíč na index v interním arrayi.
 
 - Ukládá **klíč–hodnota** páry (`key -> value`)
 - Díky hashovací funkci je možné najít hodnotu extrémně rychle → **O(1)**
