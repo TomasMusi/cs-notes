@@ -216,6 +216,15 @@ Datové struktury jsou **základem algoritmického myšlení**. Správná volba 
 
 Používáme je k organizaci dat tak, aby byly přístupné, manipulovatelné a efektivně spravované.
 
+Každá struktura má své **silné i slabé stránky**.  
+Přirovnání ti pomůže pochopit, *proč* je konkrétní struktura navržená právě takto.  
+
+Chceš-li psát efektivní algoritmy, musíš vědět:
+- jakou strukturu vybrat,
+- kdy ji použít,
+- a jak s ní efektivně pracovat.
+
+
 ---
 
 ### Array
@@ -319,5 +328,19 @@ Aby nevznikl chaos ve schránce, musíme to nějak vyřešit:
 
 ### Vlastnost:
 Každým krokem eliminuješ polovinu prvků (binary search)
+
+---
+
+## Set (Množina)
+
+> *Jako Thanosova rukavice – každý kámen (prvek) může být jen jednou.*
+
+- Ukládá **unikátní prvky**
+- Nezaručuje pořadí
+- Vyhledávání / vložení / mazání: **O(1)**  
+  *(při kolizi může být O(n))*
+- Sets jsou velmi užitečné při prohledávání stromů (Trees) nebo grafů.
+
+*Poznámka*: V mnoha pohovorech se používají otázky jako je odstranění duplicit z link listu nebo odstranění  duplicit z data setu.
 
 ---
