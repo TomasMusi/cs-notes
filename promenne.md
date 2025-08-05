@@ -105,5 +105,67 @@ counter(); // count se stane 3
 ```
 
 
-d
+## Volání funkcí → nový stack frame → nové instance proměnných
+
+Kdykoli zavoláš funkci, počítač potřebuje někam uložit její proměnné, parametry a návratovou adresu – tedy místo, kam se má vrátit, až funkce skončí.
+
+Proto se pro každé volání funkce vytvoří nový "rámec" (stack frame) na tzv. zásobníku (stack).
+
+
+```C 
+def pozdrav(jmeno):
+    zprava = "Ahoj, " + jmeno
+    print(zprava)
+
+pozdrav("Tereza")
+```
+
+Když zavoláš ```pozdrav("Tereza")```, vytvoří se nový stack frame, který obsahuje:
+
+- parametr ```jmeno = "Tereza"```
+- lokální proměnnou ```zprava```
+
+
+Po skončení funkce se tento stack frame **automaticky smaže** → tyto proměnné už **neexistují**.
+
+### Rekurze → každé volání má vlastní kopii proměnných
+
+Rekurze je, když funkce volá sama sebe.
+
+A protože každé volání vytváří **nový stack frame**, každá úroveň rekurze má:
+
+- své vlastní proměnné
+- svůj vlastní kontext
+
+Jak to vypadá?
+
+```Python
+def faktorial(n):
+    if n == 1:
+        return 1
+    else:
+        return n * faktorial(n - 1) # rekurze
+```
+
+Když zavoláš ```faktorial(3)```, děje se tohle:
+
+```scss
+faktorial(3)
+ → faktorial(2)
+   → faktorial(1)
+```
+
+Každý z těchto tří výpočtů má **vlastní** ```n```:
+
+
+- První ```n = 3```
+- Druhé ```n = 2```
+- Třetí ```n = 1```
+
+A každá funkce čeká, až se vyřeší ta „vnořená pod ní“ – až pak může vrátit výsledek.
+
+### Heap → objekty žijí dál, dokud je neodstraníš
+
+
+
 ---
