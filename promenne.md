@@ -166,6 +166,41 @@ A každá funkce čeká, až se vyřeší ta „vnořená pod ní“ – až pak
 
 ### Heap → objekty žijí dál, dokud je neodstraníš
 
+- Heap je **část paměti**, kterou program používá na ukládání **objektů** nebo **dat**, **jejichž velikost a životnost neznáš předem.**
+
+- Do heapu se ukládají věci, které **vytvoříš dynamicky** – například přes ``new`` v C++ nebo při vytvoření objektu v Javě.
+
+Proč tam objekty žijí dál?
+
+- Když vytvoříš proměnnou na **stacku** (např. int x = 5;), ta proměnná zanikne sama, jakmile skončí blok kódu (funkce).
+
+- Když něco uložíš do heapu, **operační systém nebo běhové prostředí neví, kdy to má smazat** – proto to tam zůstane, dokud to **neodstraníš** (v C/C++ přes ``delete`` nebo ``free``), nebo dokud si to nevezme **garbage collector** (v Javě, Pythonu).
+
+```C++
+void funkce() {
+    int x = 5; // stack → zanikne po skončení funkce
+    int* p = new int(10); // heap → přežije konec funkce
+
+    // ... něco s p
+} // tady se x smaže, ale p pořád ukazuje na 10 v heapu
+
+```
+
+- Pokud po skončení funkce nezavoláš ```delete p;```, ta 10 v paměti tam **zůstane**, i když už na ni nemáš odkaz → **memory leak**.
+
+**Java/Python**
+
+- V Javě a Pythonu máš heap také, ale je tam **garbage collector**, který čas od času smaže objekty, na které už nevede žádná proměnná.
+
+-  Ale dokud **máš někde odkaz na objekt**, bude žít dál.
+
+```Java
+List<String> seznam = new ArrayList<>();
+seznam.add("Ahoj"); // objekt "Ahoj" je v heapu
+
+// pokud proměnnou seznam nastavíš na null a nikde jinde není odkaz,
+// GC ho smaže při příštím úklidu
+```
 
 
 ---
