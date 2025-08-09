@@ -435,4 +435,23 @@ U unsigned není problém, protože není bit znaménka.
 Aritmetický >> 1 = 11111110  (zůstává záporné)
 Logický     >> 1 = 01111110  (změna znaménka)
 ```
+
+**3. Desetinná čísla (float, double)**
+
+- Bitové operace se na desetinné typy přímo **neaplikují**, protože jejich bity neznamenají „váhy 1, 2, 4…“ ale jsou uspořádány podle standardu **IEEE 754**:
+    - 1 bit znaménko
+    - několik bitů exponent
+    - několik bitů mantisa (zlomek)
+- Pokud potřebuješ měnit bity desetinného čísla, musíš:
+    - **1.** Přetypovat na celé číslo stejné velikosti (```reinterpret cast```, ```union```).
+    - **2.** Provést bitové operace.
+    - **3.** Vrátit zpět na float/double.
+
+**Příklad** – změna znaménka u float:
+
+```C
+float f = 3.14;
+unsigned int* p = (unsigned int*)&f;
+*p ^= 0x80000000; // přepne znaménkový bit
+```
 ---
