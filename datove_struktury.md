@@ -18,13 +18,13 @@ Teorie:
 
 - **O(1)** – konstantní čas, nezávisí na velikosti dat
 
-- **O(log n)** – velikost vstupu se zmenšuje exponenciálně po každém kroku
+- **O(log n)** – velikost vstupu se zmenšuje exponenciálně po každém kroku. Logaritmická složitost znamená, že při každém kroku zredukuješ prostor hledání o konstantní násobek (často na polovinu – binární vyhledávání).
 
 - **O(n)** – lineární čas, musíš projít všechno
 
 - **O(n log n)** – typické pro třídicí algoritmy
 
-- **O(n²)** – špatné pro velká data
+- **O(n²)** – špatné pro velká data. Typicky se objevuje u naivních třídicích algoritmů (bubble sort, insertion sort bez optimalizací) nebo u algoritmů, které porovnávají každý prvek s každým.
 
 Praxe:
 
@@ -45,7 +45,7 @@ Co je CPU cache a proč existuje?
 Co je „cache line“?
 
 - Cache není uložena po jednotlivých bajtech, ale po **blocích** pevné velikosti.
-- Každý takový blok se jmenuje **cache line**. Typicky má **64 bajtů** (což je tak 8 čísel typu ```int``` za sebou, pokud má ```int``` 8 bajtů).
+- Každý takový blok se jmenuje **cache line**. Typicky má **64 bajtů** (což je tak 16 čísel typu ```int``` za sebou, pokud má ```int``` 4 bajty).
 - Když procesor potřebuje jeden prvek z paměti, načte **celý blok**, ve kterém se prvek nachází. To znamená: když pak potřebuje sousední prvky, už je má připravené → **rychlejší přístup**.
 
 Locality – co to znamená?
@@ -56,4 +56,4 @@ Existují dva druhy:
 
 - **Spatial locality** (*prostorová*) → přistupuješ k datům, která leží blízko u sebe v paměti  → CPU načte jeden blok a využije z něj co nejvíce dat, než musí pro další blok do RAM.
 
-- **Temporal locality** (*časová*) → opakovaně přistupuješ ke stejným datům  → CPU je drží v cache, takže je má okamžitě k dispozici.
+- **Temporal locality** (*časová*) → opakovaně přistupuješ ke stejným datům  → CPU je drží v cache, takže je má okamžitě k dispozici. Opakované přístupy ke stejnému indexu v poli při vícenásobném průchodu.
