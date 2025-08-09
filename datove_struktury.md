@@ -109,3 +109,81 @@ Příklad:
 O(n) sekvenční čtení pole < O(log n) hledání v stromu
 (v reálném čase, ne v Big-O matematice)
 
+## Datové Struktury
+
+**1. Array (Pole)**
+
+**Popis**: Souvislý blok paměti, prvky přístupné podle indexu.
+
+**Výhody:**
+- O(1) přístup k prvku podle indexu.
+- Výborná **cache locality** (sekvenční data → vysoký hit rate).
+- Jednoduchá implementace.
+- Dobré pro sekvenční procházení.
+
+**Nevýhody:**
+- Pevná velikost (u statických polí).
+- Vložení/mazání uprostřed = O(n) kvůli posunu prvků.
+- Přesun velkých polí je neefektivní. 
+
+**Cache locality**: vysoká (prvky za sebou v paměti).
+**Kdy vybrat**: Když čteš často, málo měníš a potřebuješ rychlý indexový přístup.
+
+**2. Dynamic Array (Vector / ArrayList)**
+
+**Popis**: Pole, které se při zaplnění zvětší.
+
+**Výhody:**
+
+- O(1) průměrný čas pro přidání na konec (občasná drahá operace zvětšení pole se rozloží mezi všechny vložení).
+- Vysoká cache locality.
+- Snadné iterace.
+
+**Nevýhody:**
+
+- drahý resize (kopírování O(n)).
+- Stále O(n) pro vložení/mazání uprostřed.
+
+**Cache locality**: vysoká.
+**Kdy vybrat**: Když potřebuješ dynamický růst, ale pořád primárně čteš a iteruješ.
+
+
+**3. Linked List**
+
+**Popis**: Každý prvek (uzel) obsahuje data + pointer na další (případně předchozí).
+
+**Výhody:**
+
+- O(1) vložení/mazání uprostřed (pokud máš pointer na místo).
+- Nevyžaduje souvislou paměť.
+
+**Nevýhody:**
+
+- O(n) přístup podle indexu.
+- Hodně paměťového overheadu (pointery).
+- Špatná **cache locality** (pointer chasing → nízký hit rate).
+- Časté alokace fragmentují paměť.
+
+**Cache locality**: nízká.
+**Kdy vybrat**: Jen pokud často vkládáš/mažeš uprostřed a nepotřebuješ rychlou indexaci.
+
+**4. Stack**
+
+**Popis**: LIFO struktura (Last In, First Out).
+
+**Výhody:**
+
+- O(1) pro ```push``` a ```pop```.
+- Snadná implementace nad array nebo linked listem.
+- Dobrá locality, pokud array-based.
+
+**Nevýhody:**
+- Přístup jen k poslednímu prvku.
+- Nepodporuje přímé vyhledávání.
+
+**Cache locality**: vysoká (array-based).
+**Kdy vybrat**: Pro undo operace, rekurzi, backtracking.
+
+**5. Queue (Fronta)**
+
+**Popis**: FIFO struktura (First In, First Out).
