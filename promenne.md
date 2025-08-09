@@ -419,6 +419,8 @@ U unsigned není problém, protože není bit znaménka.
     - **Logický posun** – vlevo vždy doplňuje nuly, znaménko se neřeší.
 - Některé jazyky pevně definují typ posunu (např. v Javě ```>>``` je aritmetický, ```>>>``` je logický), jiné to nechávají na procesoru.
 
+<img width="768" height="364" alt="image" src="https://github.com/user-attachments/assets/9694b115-8352-48e6-9567-c2bdf838cdb6" />
+
 
 **Příklad – aritmetický vs. logický posun (8bit):**
 
