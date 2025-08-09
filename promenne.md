@@ -392,4 +392,39 @@ bit 2 = je administrátor
     -  Bitové operace se používají při práci s hardwarem, síťovými protokoly nebo kompresí dat, kde je nutné číst/zapisovat jednotlivé bity.
 
 #### Vliv na typy proměnných
+
+**1. Celá čísla (int, unsigned int, short, long)**
+
+- Bitové operace jsou pro **celá čísla** přirozené, protože jejich binární reprezentace přímo odpovídá tomu, s čím pracuješ (každý bit má jasnou váhu: 1, 2, 4, 8, …).
+
+- **Unsigned** (bezznaménková) čísla se chovají nejpředvídatelněji, protože všechny bity jen vyjadřují kladné hodnoty.
+
+- **Signed** (se znaménkem) čísla mají jeden bit (nejvyšší) vyhrazený pro znaménko a používají **doplňkový kód** (*two's complement*) → to ovlivňuje výsledky posunů.
+
+**Příklad**
+
+```C
+unsigned int a = 5;     // 00000101
+unsigned int b = a << 2; // 00010100 = 20 (Používáme 10 soustavu!)
+```
+U unsigned není problém, protože není bit znaménka.
+
+**2. Záporná čísla**
+
+- Většina moderních architektur používá **doplňkový kód** pro reprezentaci záporných čísel.
+- To znamená, že např. ```-1``` je uloženo jako všechny bity = 1 (```11111111``` v 8bit).
+- **Posun vlevo** (<<) funguje u záporných čísel stejně jako u kladných (bity se prostě posunou), ale může dojít k přetečení.
+- **Posun vpravo** (>>) má dva typy:
+    - **Aritmetický posun** – zachová znaménko (doplňuje vlevo 1 u záporných čísel).
+    - **Logický posun** – vlevo vždy doplňuje nuly, znaménko se neřeší.
+- Některé jazyky pevně definují typ posunu (např. v Javě ```>>``` je aritmetický, ```>>>``` je logický), jiné to nechávají na procesoru.
+
+
+**Příklad – aritmetický vs. logický posun (8bit):**
+
+```TEXT
+-4 = 11111100
+Aritmetický >> 1 = 11111110  (zůstává záporné)
+Logický     >> 1 = 01111110  (změna znaménka)
+```
 ---
