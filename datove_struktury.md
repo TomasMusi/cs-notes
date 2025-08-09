@@ -55,5 +55,32 @@ Locality je míra toho, **jak blízko u sebe jsou data, ke kterým CPU přistupu
 Existují dva druhy:
 
 - **Spatial locality** (*prostorová*) → přistupuješ k datům, která leží blízko u sebe v paměti  → CPU načte jeden blok a využije z něj co nejvíce dat, než musí pro další blok do RAM.
+    - Přistupuješ k **datům, která jsou blízko sebe v paměti**.
+    - Příklad:
+        - Máš pole (```array```) v paměti uložené souvisle: ```[1, 2, 3, 4, 5]```
+        - CPU načte ```[1, 2, 3, 4, 5]``` jedním nebo dvěma tahy
+        - Sekvenční průchod polem = téměř optimální pro cache
 
 - **Temporal locality** (*časová*) → opakovaně přistupuješ ke stejným datům  → CPU je drží v cache, takže je má okamžitě k dispozici. Opakované přístupy ke stejnému indexu v poli při vícenásobném průchodu.
+    - Přistupuješ k **těm samým datům opakovaně** v krátkém čase.
+    - CPU si data nechá v cache, takže druhý přístup je extrémně rychlý.
+
+### Proč může být O(n) rychlejší než O(log n)
+
+Teoretická složitost nepočítá **čas přístupu k paměti** — počítá jen počet operací.
+
+Příklad:
+
+- **Hledání v setříděném poli** (```array```):
+    - Binary search → O(log n)
+    - Lineární průchod → O(n)
+    - Ale… pokud pole leží souvisle v paměti, procesor načítá bloky dopředu a téměř všechna data má „po ruce“  → jeden „miss“ načte spoustu dalších prvků.
+
+- **Hledání v binárním stromu**:
+    - O(log n) teoreticky
+    - Ale každý uzel je v paměti někde jinde (díky pointerům)
+    - Skáčeš po RAM, cache miss skoro u každého kroku → reálně mnohem pomalejší než lineární průchod polem
+
+O(n) sekvenční čtení pole < O(log n) hledání v stromu
+(v reálném čase, ne v Big-O matematice)
+
