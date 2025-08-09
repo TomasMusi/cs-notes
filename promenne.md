@@ -239,6 +239,9 @@ seznam.add("Ahoj"); // objekt "Ahoj" je v heapu
 - **Vlákno** (*thread*) je samostatná „lajna“ provádění instrukcí v rámci programu.
 - Jeden proces může mít **více vláken**, která běží souběžně a sdílí stejný **heap** (tedy data), ale každý má vlastní **stack**.
 
+<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/ebea1192-7677-4014-b94d-05fe7eee1ce0" />
+
+
 **Proč má vlákno vlastní stack**
 
 - Stack obsahuje **lokální proměnné, návratové adresy a argumenty funkcí**.
