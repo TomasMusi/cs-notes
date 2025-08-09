@@ -164,6 +164,9 @@ Každý z těchto tří výpočtů má **vlastní** ```n```:
 
 A každá funkce čeká, až se vyřeší ta „vnořená pod ní“ – až pak může vrátit výsledek.
 
+<img width="626" height="617" alt="image" src="https://github.com/user-attachments/assets/458e57e7-cdce-43bc-86ce-58aca29ec5db" />
+
+
 ### Heap → objekty žijí dál, dokud je neodstraníš
 
 - Heap je **část paměti**, kterou program používá na ukládání **objektů** nebo **dat**, **jejichž velikost a životnost neznáš předem.**
