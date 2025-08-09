@@ -295,4 +295,101 @@ Každý kuchař si na svém stole dělá pořádek po svém a nepotřebuje, aby 
 - **Chyby při zaplnění**:
     - Java: ```java.lang.OutOfMemoryError```
     - C++: výjimka ```std::bad_alloc``` nebo ukončení programu
+
+
+## 📌 2. Bitové Operace
+
+- Bitové operace jsou operace, které pracují **přímo na úrovni jednotlivých bitů** proměnné (0 a 1).
+-  Používají se pro:
+    - **nízkoúrovňovou manipulaci** s daty
+    - **optimalizaci výkonu a paměti**
+    - práci s **flagy, maskami a binárními protokoly**
+        - **Flagy** = příznaky – jednotlivé bity, které označují nějaký stav (např. „uživatel je přihlášen“, „má oprávnění admina“).
+        -  **Maska** = binární číslo, které použiješ k „vytažení“ nebo „nastavení“ jen určitých bitů.
+        -  **Binární protokoly** = formáty dat, kde se konkrétní bity používají pro konkrétní význam (např. v síťové komunikaci).
+    - nastavování, mazání nebo přepínání jednotlivých bitů v hodnotě
+
+**V praxi**
+
+- **Oprávnění uživatele** – jeden int může obsahovat info, jestli může číst, psát, mazat.
+- **Síťové hlavičky** – TCP/UDP protokoly používají jednotlivé bity k označení příznaků jako SYN, ACK, FIN.
+- **Grafika** – barva pixelu v RGB může být uložena v jednotlivých bitech.
+
+**Příklad** – test oprávnění:
+
+```C
+#define PERM_READ   (1 << 0)
+#define PERM_WRITE  (1 << 1)
+#define PERM_DELETE (1 << 2)
+
+int permissions = PERM_READ | PERM_WRITE;
+if (permissions & PERM_WRITE) {
+    // má právo zapisovat
+}
+```
+
+
+**Nastavování, mazání nebo přepínání jednotlivých bitů**
+
+**Co to znamená**
+
+- Máš proměnnou a potřebuješ **zapnout (1)**, **vypnout (0)** nebo **invertovat (přepnout)** konkrétní bit, aniž bys měnil ostatní.
+
+**V praxi**
+
+- Ovládání LED diod, motorů, senzorů (každý bit řídí jiný kanál).
+- Nastavení konfigurace zařízení přes bity v jeho registrech.
+- Komprese – balení více hodnot do jedné proměnné.
+
+```C
+int value = 0b00001000;
+
+// zapnout 1. bit
+value |= (1 << 1); // 00001010
+
+// vypnout 3. bit
+value &= ~(1 << 3); // 00000010
+
+// přepnout 1. bit
+value ^= (1 << 1); // 00000000
+```
+
+
+### Základní Bitové Operace
+
+| Operace | Symbol | Popis | Příklad (8 bitů) |
+|---------|--------|-------|------------------|
+| **AND** | `&` | Bitový součin – výsledek 1 jen když oba bity jsou 1 | `1100 & 1010 = 1000` |
+| **OR** | `\|` | Bitový součet – výsledek 1, když aspoň jeden bit je 1 | `1100 \| 1010 = 1110` |
+| **XOR** | `^` | Exkluzivní OR – výsledek 1, když je přesně jeden bit 1 | `1100 ^ 1010 = 0110` |
+| **NOT** | `~` | Bitová negace – převrátí všechny bity | `~1100 = 0011` (v doplňkovém kódu závisí na velikosti typu) |
+| **SHIFT LEFT** | `<<` | Posun vlevo – násobí hodnotu mocninou dvou | `0001 << 2 = 0100` |
+| **SHIFT RIGHT** | `>>` | Posun vpravo – dělí hodnotu mocninou dvou | `1000 >> 2 = 0010` |
+
+#### Jak ovlivňují proměnné
+
+- **Změna konkrétního bitu**
+    -  Pomocí AND/OR/XOR můžeš zapínat, vypínat nebo přepínat jednotlivé bity bez dotyku ostatních.
+
+```C
+flags = flags | 0b00000100;  // zapnutí 3. bitu
+flags = flags & ~0b00000100; // vypnutí 3. bitu
+```
+
+- **Kompaktní uložení dat**
+    -  Místo více proměnných můžeš mít jednu proměnnou, kde každý bit reprezentuje stav (tzv. bitmask).
+
+```TEXT
+bit 0 = má přístup k čtení
+bit 1 = má přístup k zápisu
+bit 2 = je administrátor
+```
+
+- **Rychlé násobení/dělení**
+    -  Posun vlevo (```<<```) = násobení 2ⁿ, posun vpravo (```>>```) = dělení 2ⁿ.
+    -  Výhodné při optimalizaci nízkoúrovňového kódu.
+- **Nízká úroveň komunikace**
+    -  Bitové operace se používají při práci s hardwarem, síťovými protokoly nebo kompresí dat, kde je nutné číst/zapisovat jednotlivé bity.
+
+#### Vliv na typy proměnných
 ---
