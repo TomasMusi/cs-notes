@@ -254,4 +254,45 @@ Představ si, že máš dva kuchaře (vlákna), kteří pracují ve stejné kuch
 
 Každý kuchař si na svém stole dělá pořádek po svém a nepotřebuje, aby mu tam druhý sahal.
 
+
+
+### Jak funguje alokace heapu?
+
+- **Heap** je oblast paměti určená pro **dynamickou alokaci** – tedy pro objekty a data, jejichž velikost a životnost nejsou známy při kompilaci.
+- Na rozdíl od **stacku** není paměť automaticky uvolněna po skončení funkce; zůstává alokována, dokud ji:
+    - **programátor neuvolní ručně** (C/C++)
+    - **neodstraní garbage collector (GC)** (Java, Python)
+
+**Rozdíly podle programovacího jazyka**
+
+**C/C++**
+
+- **Správa paměti**: plně manuální – alokace (```new```, ```malloc```) a dealokace (```delete```, ```free```) musí být výslovně řízeny programátorem.
+- **Chyby**: zapomenuté uvolnění → *memory leak*, předčasné uvolnění → *dangling pointer*.
+- **Umístění objektů**: objekty mohou být **na stacku** (např. ```MyClass obj;```) nebo **v heapu** (```MyClass* p = new MyClass();```).
+
+**Java**    
+
+- **Správa paměti**: automatická pomocí garbage collectoru.
+- **Umístění objektů**: všechny objekty (instanční data) jsou v heapu, ale odkazy na ně se obvykle ukládají na stack (v rámci *stack frame vlákna*).
+- **Kategorie heapu (JVM)**:
+    - **1. Young Generation** – nové objekty, častý *minor GC*.
+    - **2. Old Generation** – dlouho žijící objekty, méně častý *major GC*.
+    - **3. PermGen ≤7 / Metaspace (Java ≥8)** – metadata tříd a metody;  PermGen měla pevnou velikost, Metaspace je v nativní paměti.
+
+**Python** 
+
+- **Správa paměti**: automatická – kombinace **počítání referencí** a **garbage collectoru** pro cyklické reference.
+- **Umístění objektů**: všechny objekty (včetně čísel, seznamů atd.) jsou v heapu; proměnné jsou jen odkazy na tyto objekty.
+
+#### Vlastnosti heap paměti
+
+- **Životnost objektů**: dokud je neodstraní programátor (C/C++) nebo GC (Java/Python).
+- **Sdílenost**: heap je přístupný všem vláknům v procesu → vyžaduje synchronizaci při paralelním přístupu.
+- **Výkon**: pomalejší než stack kvůli složitější správě (alokace, dealokace, GC).
+- **Velikost**: obvykle větší než stack, ale omezená dostupnou pamětí a konfigurací (např. ```-Xmx``` v JVM).
+
+- **Chyby při zaplnění**:
+    - Java: ```java.lang.OutOfMemoryError```
+    - C++: výjimka ```std::bad_alloc``` nebo ukončení programu
 ---
