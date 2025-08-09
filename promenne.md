@@ -455,7 +455,7 @@ unsigned int* p = (unsigned int*)&f;
 *p ^= 0x80000000; // přepne znaménkový bit
 ```
 
-**Boolean (true/false)**
+**4. Boolean (true/false)**
 
 - Boolean typy jsou většinou uloženy interně jako 1 byte (nebo větší), ale pro logiku stačí 1 bit.
 - Bitové operátory ```&``` a ```|``` fungují pro bool stejně jako pro čísla → často se používají v optimalizacích.
