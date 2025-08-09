@@ -205,5 +205,53 @@ seznam.add("Ahoj"); // objekt "Ahoj" je v heapu
 // GC ho smaže při příštím úklidu
 ```
 
+### Jak funguje alokace stacku?
+
+- **Stack** je oblast paměti používaná pro ukládání lokálních proměnných, argumentů funkcí a návratových adres.
+- Paměť se zde alokuje ve **souvislých blocích** (rámcích – *stack frames*) v rámci *call stacku*.
+- **Velikost paměti pro každou lokální proměnnou** je známá už při kompilaci, takže alokace probíhá velmi rychle.
+- Když je funkce zavolána, vytvoří se nový *stack frame* pro její proměnné a argumenty.
+- Programátor **neřeší** explicitní alokaci ani dealokaci.
+- Tento způsob alokace se často označuje jako **dočasné přidělení paměti** (*temporary memory allocation*).
+- Po ukončení funkce **se rámec uvolní automaticky** pouhým posunutím *ukazatele* na vrchol stacku.
+- Jakmile funkce dokončí provádění, alokovaná paměť je **automaticky uvolněna**.
+
+
+
+#### Klíčové vlastnosti přidělování stacku
+
+- Paměť je dostupná **pouze** během běhu funkce (resp. do ukončení jejího *stack frame*).
+- Automatické uvolnění probíhá po **skončení funkce**.
+- Přeplnění stacku (*stack overflow*) může nastat např. při příliš hluboké rekurzi nebo při alokaci příliš velkých lokálních proměnných:
+    - Java: ```java.lang.StackOverflowError```
+    - C/C++: obvykle *segmentation fault* nebo chyba typu *stack overflow*.
+- Paměť na stacku je **izolovaná pro každé vlákno** (každé má svůj vlastní stack).
+- Alokace i dealokace jsou **rychlejší** než u heapu, protože probíhají pouhou změnou ukazatele (*stack pointeru*).
+
+
+####  Co znamená „každé vlákno má svůj vlastní stack“?
+
+**Co je vlákno**
+
+- **Vlákno** (*thread*) je samostatná „lajna“ provádění instrukcí v rámci programu.
+- Jeden proces může mít **více vláken**, která běží souběžně a sdílí stejný **heap** (tedy data), ale každý má vlastní **stack**.
+
+**Proč má vlákno vlastní stack**
+
+- Stack obsahuje **lokální proměnné, návratové adresy a argumenty funkcí**.
+- Kdyby se stack sdílel mezi vlákny, docházelo by k **chaosu**:
+    - vlákna by si přepisovala lokální proměnné
+    - návratové adresy by se pletly
+    - program by padal
+- Proto OS při vytvoření nového vlákna **alokuje nový stack jen pro něj**.
+
+**Praktický příklad**
+
+Představ si, že máš dva kuchaře (vlákna), kteří pracují ve stejné kuchyni (proces).
+
+- **Heap** = společná spižírna, kde jsou všechny ingredience (sdílená data).
+- **Stack** = osobní pracovní stůl každého kuchaře, kde má svoje nástroje a aktuální recept (lokální proměnné a stav funkcí).
+
+Každý kuchař si na svém stole dělá pořádek po svém a nepotřebuje, aby mu tam druhý sahal.
 
 ---
