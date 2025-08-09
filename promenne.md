@@ -454,4 +454,21 @@ float f = 3.14;
 unsigned int* p = (unsigned int*)&f;
 *p ^= 0x80000000; // přepne znaménkový bit
 ```
+
+**Boolean (true/false)**
+
+- Boolean typy jsou většinou uloženy interně jako 1 byte (nebo větší), ale pro logiku stačí 1 bit.
+- Bitové operátory ```&``` a ```|``` fungují pro bool stejně jako pro čísla → často se používají v optimalizacích.
+- Rozdíl: logické operátory ```&&``` a ```||``` dělají krácení (*short-circuit evaluation*):
+    - A ```&&``` B – pokud ```A``` je false, ```B``` se ani nevyhodnocuje.
+    - ```A & B``` – vyhodnotí se vždy oba výrazy (užitečné při paralelních testech bez ztráty podmínek).
+
+```C
+bool a = true;
+bool b = false;
+
+bool c = a & b;  // false, oba operandy se vyhodnotí
+bool d = a && b; // false, b se nevyhodnotí (short-circuit)
+```
+
 ---
