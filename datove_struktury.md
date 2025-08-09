@@ -31,7 +31,7 @@
     - Sekvenční přístup? → pole / array-based struktura
     - Náhodný přístup / pointer chasing? → pozor na linked listy a nevyvážené stromy
         - Náhodný přístup = skáčeš po paměti na náhodná místa.
-        - **Pointer chasing** = máš ukazatel na další prvek (např. linked list, strom) a musíš ho načíst, abys věděl, kde je další data.
+        - **Pointer chasing** = máš ukazatel na další prvek (např. linked list, strom) a musíš ho načíst, abys věděl, kde jsou další data.
         - Problém:
             - Každý skok může skočit do úplně jiné části RAM.
             - Každý takový skok = **cache miss** → CPU musí čekat na RAM (desítky až stovky ns).
