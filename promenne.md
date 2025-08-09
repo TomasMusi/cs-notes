@@ -188,6 +188,9 @@ void funkce() {
 
 - Pokud po skončení funkce nezavoláš ```delete p;```, ta 10 v paměti tam **zůstane**, i když už na ni nemáš odkaz → **memory leak**.
 
+- **Memory leak** = paměť, kterou program zabral, ale už ji neumí uvolnit, **protože ztratil všechny odkazy na ni**.
+Výsledek? Paměť se „vyplýtvá“ a program může časem **spadnout** nebo **zpomalit**.
+
 **Java/Python**
 
 - V Javě a Pythonu máš heap také, ale je tam **garbage collector**, který čas od času smaže objekty, na které už nevede žádná proměnná.
