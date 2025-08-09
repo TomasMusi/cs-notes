@@ -12,6 +12,31 @@
 
     - **Potřebuju pouze unikátní prvky** → Set
 
+
+## Checklist, při výběru Datové Struktury
+
+- 1. **Jaký je mix operací?**
+    - Kolik % čtení, vkládání, mazání, iterací, range queries?
+    - Optimalizuj pro nejčastější operace.
+
+- 2. **Potřebuju pořadí nebo řazení?**
+    - Ano → vyvážený strom (```TreeMap/TreeSet```)
+    - Ne → hash (```HashMap/HashSet```)
+
+- 3. **Jak velké je n?**
+    - Malé → jednoduchost a cache locality jsou důležitější než Big-O
+    - Velké → asymptotika (O(log n) vs O(n)) rozhoduje víc
+
+- 4. **Cache locality**
+    - Sekvenční přístup? → pole / array-based struktura
+    - Náhodný přístup / pointer chasing? → pozor na linked listy a nevyvážené stromy
+        - Náhodný přístup = skáčeš po paměti na náhodná místa.
+        - **Pointer chasing** = máš ukazatel na další prvek (např. linked list, strom) a musíš ho načíst, abys věděl, kde je další data.
+        - Problém:
+            - Každý skok může skočit do úplně jiné části RAM.
+            - Každý takový skok = **cache miss** → CPU musí čekat na RAM (desítky až stovky ns).
+            - Při průchodu linked listu máš téměř **cache miss na každém prvku**.
+
 ## Asymptotika (Big-O) a co znamená v reálu
 
 Teorie:
