@@ -304,6 +304,8 @@ Kolize nastává, když různé klíče směřují na stejnou pozici v interním
 **Cache Locality:** střední až nízka (ukazatele)
 **Kdy vybrat:** Když potřebuješ řazení, rozsahy, stabilní výkon.
 
+![Red Black Tree](pictures/RedBlackTree.png)
+
 **9. Heap (Priority Queue)**
 
 > *Představ si pyramidu z krabic, kde nahoře je vždy ta s nejvyšší nebo nejnižší prioritou.*  
