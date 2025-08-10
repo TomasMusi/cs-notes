@@ -274,6 +274,8 @@ Kolize nastává, když různé klíče směřují na stejnou pozici v interním
 **Cache locality**: super při open addressing, špatná při chainingu.
 **Kdy vybrat**: Rychlý přístup podle klíče, nezáleží na pořadí.
 
+![alt text](pictures/hashmap.png)
+
 **8. Balanced BST (AVL, Red-Black Tree, TreeMap/TreeSet)**
 
 **Popis**: Strom udržující rovnováhu pro O(log n) operace.
