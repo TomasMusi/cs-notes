@@ -51,6 +51,8 @@ Teorie:
 
 - **O(n²)** – špatné pro velká data. Typicky se objevuje u naivních třídicích algoritmů (bubble sort, insertion sort bez optimalizací) nebo u algoritmů, které porovnávají každý prvek s každým.
 
+![Big O](pictures/BigO.png)
+
 Praxe:
 
 - **Malé n** → i „pomalejší“ algoritmus může být rychlejší kvůli menší konstantě
@@ -138,6 +140,8 @@ Nové pole po přidání 4: [1, 2, 3, 4]
 **Cache locality**: vysoká (prvky za sebou v paměti).
 **Kdy vybrat**: Když čteš často, málo měníš a potřebuješ rychlý indexový přístup.
 
+![alt text](pictures/array.png)
+
 **2. Dynamic Array (Vector / ArrayList)**
 
 **Popis**: Pole, které se při zaplnění zvětší.
@@ -180,6 +184,8 @@ Nové pole po přidání 4: [1, 2, 3, 4]
 **Cache locality**: nízká.
 **Kdy vybrat**: Jen pokud často vkládáš/mažeš uprostřed a nepotřebuješ rychlou indexaci.
 
+![Linked List](pictures/linkedlist.png)
+
 **4. Stack**
 
 > *Jako věž z chipsů – poslední chips položený navrch bude první, který sníš.*
@@ -202,6 +208,8 @@ Nové pole po přidání 4: [1, 2, 3, 4]
 - Rekurze (volací zásobník).  
 - Backtracking algoritmy (např. DFS).
 
+![Stack](pictures/stack.png)
+
 **5. Queue (Fronta)**
 
 > *Řada u pokladny – kdo přijde první, ten jde první.*
@@ -223,6 +231,8 @@ Nové pole po přidání 4: [1, 2, 3, 4]
 
 **Cache locality** dobrá u kruhového bufferu, špatná u linked listu
 **Kdy vybrat** Pro plánování úloh, streamy, BFS.
+
+![Queue](pictures/Screenshot%20from%202025-08-10%2016-16-09.png)
 
 **6. Deque**
 
@@ -274,7 +284,7 @@ Kolize nastává, když různé klíče směřují na stejnou pozici v interním
 **Cache locality**: super při open addressing, špatná při chainingu.
 **Kdy vybrat**: Rychlý přístup podle klíče, nezáleží na pořadí.
 
-![alt text](pictures/hashmap.png)
+![HashMap](pictures/hashmap.png)
 
 **8. Balanced BST (AVL, Red-Black Tree, TreeMap/TreeSet)**
 
@@ -316,6 +326,8 @@ Indexování v poli umožňuje efektivní nalezení rodičů i dětí bez pointe
 
 **Cache locality** Dobrá (array-based).
 **Kdy vybrat** Plánovače úloh, algoritmy s prioritou (Dijkstra). Situace, kdy potřebuješ často přidávat/odebírat prvky s nejvyšší prioritou. EOF
+
+![Max Heap vs Min Heap](pictures/heap.png)
 
 **10. Trie (Prefix Tree)**
 
