@@ -304,3 +304,28 @@ for (String jmeno : seznam) {
 
 **Vyhýbej se nekonečným cyklům bez důvodu**
 - ```while(true)``` je v pořádku jen pokud máš jasnou **exit podmínku** uvnitř (```break```).
+
+
+## Vnořené Cykly.
+
+Vnořený cyklus = cyklus uvnitř jiného cyklu.
+Každý průchod **vnějšího cyklu** spustí celý **vnitřní cyklus**.
+
+```JAVA
+for (int i = 0; i < 3; i++) {       // Vnější cyklus
+    for (int j = 0; j < 2; j++) {   // Vnitřní cyklus
+        System.out.println(i + "," + j);
+    }
+}
+
+//Výstup
+
+/*
+0,0
+0,1
+1,0
+1,1
+2,0
+2,1
+*/
+```
