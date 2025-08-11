@@ -132,7 +132,76 @@ String status = (vek >= 18) ? "Dospělý" : "Nezletilý";
 
 Používej na krátké výrazy, ne na dlouhé bloky → čitelnost je důležitá.
 
+**Čitelnost > zkrácení kódu**
+- Napiš kód tak, aby ho někdo další pochopil na první pohled.
 
+```JAVA
+// ✅ čitelné
+String status = (vek >= 18) ? "Dospělý" : "Nezletilý";
 
+// ❌ nečitelné – složité logiky v ternárním
+String status = (vek >= 18 && isCitizen && !isSuspended) ? "Platný" : (vek >= 18 ? "Náhradní" : "Neplatný");
+```
 
+**Switch vs. mapa**
 
+- Pokud máš **přiřazení klíč** → **hodnota**, nemusíš psát ```switch```:
+
+```JAVA
+// switch verze
+switch (den) {
+    case 1: return "Pondělí";
+    case 2: return "Úterý";
+    case 3: return "Středa";
+    default: return "Neznámý den";
+}
+
+// mapa verze
+Map<Integer, String> dny = Map.of(
+    1, "Pondělí",
+    2, "Úterý",
+    3, "Středa"
+);
+return dny.getOrDefault(den, "Neznámý den");
+```
+
+- Mapa (```Map```, ```HashMap```) je **snadněji rozšiřitelná** – nemusíš měnit kód logiky, jen data.
+
+**Řaď podmínky podle pravděpodobnosti**
+
+- CPU má **branch prediction** – snaží se odhadnout, kam skočí dál.
+- Když dáš **nejčastější podmínku první**, snižuješ počet špatných odhadů a kód běží rychleji.
+
+```JAVA
+// Lepší – častý případ první
+if (status == READY) {
+    process();
+} else if (status == WAITING) {
+    waitMore();
+} else {
+    logError();
+}
+```
+
+**Vyhýbej se deep-nestingu**
+- Více než 2–3 úrovně vnoření (```if``` → ```if``` → ```if```) se špatně čtou.
+- Používej **guard clauses** – včasný návrat z funkce.
+
+```JAVA
+// ❌ deep nesting
+if (user != null) {
+    if (user.isActive()) {
+        if (!user.isBanned()) {
+            sendMessage(user);
+        }
+    }
+}
+
+// ✅ guard clauses
+if (user == null) return;
+if (!user.isActive()) return;
+if (user.isBanned()) return;
+sendMessage(user);
+```
+
+- Guard clauses **zploští kód**, takže čtenář nemusí sledovat tolik závorek.
