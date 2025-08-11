@@ -205,3 +205,102 @@ sendMessage(user);
 ```
 
 - Guard clauses **zploští kód**, takže čtenář nemusí sledovat tolik závorek.
+
+## Co je to cyklus?
+
+Cykly jsou způsob, jak **opakovat stejný kus kódu vícekrát**, aniž bys ho musel psát pořád dokola.
+
+Analogie:
+
+- **for** – „Běž 10× kolem hřiště, ať je to přesně 10 kol.“
+- **while** – „Běž dokud máš sílu běžet.“
+- **do-while** – „Běž aspoň jednou, a pak pokračuj, dokud máš sílu.“
+- **foreach** – „Projdi seznam lidí a každému podej ruku.“
+
+### Základní typy cyklů
+
+**for – cyklus s počítadlem**
+- Víš přesně, kolikrát chceš opakovat.
+- Obsahuje **inicializaci**, **podmínku** a **krok**.
+
+```JAVA
+for (int i = 0; i < 5; i++) {
+    System.out.println(i); // vypíše 0,1,2,3,4
+}
+```
+
+**Průběh** 
+
+1. ```int i = 0``` – nastavíme začátek (počítadlo).
+2. ```i < 5``` – pokud je pravda, vstoupíme do těla cyklu.
+3. ```System.out.println(i)``` – vykoná se.
+4. ```i++```  – zvýšíme o 1.
+5. Opakujeme, dokud podmínka neplatí.
+
+**while – cyklus dokud platí podmínka**
+
+- Nepředvídáš přesný počet opakování.
+- Může proběhnout 0× (když hned od začátku není splněná podmínka).
+
+```JAVA
+while (energie > 0) {
+    spotrebujEnergii();
+}
+```
+
+**do-while – cyklus, který proběhne minimálně jednou**
+
+- Podmínka se kontroluje **až po provedení těla**.
+```JAVA
+do {
+    spotrebujEnergii();
+} while (energie > 0);
+```
+
+**foreach – jednoduché procházení kolekce** 
+
+- Používá se pro **iteraci přes seznamy, pole, kolekce**.
+- Nepotřebuješ indexy, jen každý prvek.
+
+```JAVA
+for (String jmeno : seznam) {
+    System.out.println(jmeno);
+}
+```
+
+### Chytré používání cyklů
+
+**Minimalizuj práci uvnitř cyklu**
+
+Špatně:
+
+```JAVA
+for (int i = 0; i < seznam.size(); i++) { // size() se volá při každé iteraci
+    System.out.println(seznam.get(i));
+}
+```
+
+Lépe:
+
+```JAVA
+int size = seznam.size();
+for (int i = 0; i < size; i++) {
+    System.out.println(seznam.get(i));
+}
+```
+
+**Používej break a continue**
+
+- ```break``` → ukončí aktuální cyklus hned.
+- ```continue``` → přeskočí zbytek těla a skočí na další iteraci.
+
+```JAVA
+for (String jmeno : seznam) {
+    if (jmeno.isBlank()) continue; // přeskočí prázdné
+    if (jmeno.equals("STOP")) break; // ukončí celý cyklus
+    System.out.println(jmeno);
+}
+```
+
+**Vyhýbej se nekonečným cyklům bez důvodu**
+- ```while(true)``` je v pořádku jen pokud máš jasnou **exit podmínku** uvnitř (```break```).
