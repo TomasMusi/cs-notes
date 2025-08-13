@@ -329,3 +329,50 @@ for (int i = 0; i < 3; i++) {       // Vnější cyklus
 2,1
 */
 ```
+
+Analogie:
+
+Představ si, že máš dvě **sady úkolů**:
+
+- **Vnější cyklus** = úkoly, které děláš **každý den** (např. 3 dny v týdnu).
+- **Vnitřní cyklus** = úkoly, které děláš **každý den ráno** (např. 2 věci).
+
+Jak to probíhá?
+
+- Den 1: ráno uděláš úkol 1, úkol 2.
+- Den 2: ráno uděláš úkol 1, úkol 2.
+- Den 3: ráno uděláš úkol 1, úkol 2.
+
+Výsledek:
+
+```
+Den 1, úkol 1
+Den 1, úkol 2
+Den 2, úkol 1
+Den 2, úkol 2
+Den 3, úkol 1
+Den 3, úkol 2
+```
+
+To je přesně to, co dělá kód:
+
+```JAVA
+for (int i = 0; i < 3; i++) {       // 3 dny
+    for (int j = 0; j < 2; j++) {   // 2 úkoly každý den
+        System.out.println(i + "," + j);
+    }
+}
+```
+
+**Každý prvek vnější sady (dny) spustí celý seznam vnitřních úkolů (ráno).**
+
+Pokud má **vnější cyklus** ```n``` iterací a **vnitřní** ```m``` iterací → celkem ```n × m``` průchodů.
+
+V našem příkladu:
+
+- ```n = 3``` (dny)
+- ```m = 2``` (úkoly)
+3 × 2 = **6 průchodů**.
+
+Proto se ve výstupu objeví 6 řádků.
+
