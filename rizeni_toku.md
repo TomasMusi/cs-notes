@@ -376,3 +376,98 @@ V našem příkladu:
 
 Proto se ve výstupu objeví 6 řádků.
 
+**Tipy**
+
+- **Optimalizuj, když můžeš** – často lze vnořený cyklus nahradit datovou strukturou:
+    - místo dvojitého hledání → použij ```  HashSet``` pro O(1) lookup.
+- **Early exit** – pokud hledáš jen první výsledek, **ukonči cyklus hned**, neprocházej zbytek.
+
+
+### Časová složitost
+
+Pokud máš:
+
+vnější cyklus ```n``` iterací
+vnitřní cyklus ```m``` iterací
+- celkový počet kroků = ```n × m```.
+
+Pokud ```n``` a ```m``` jsou stejné (**n**), složitost je:
+- **2** cykly → ```O(n²)```
+- **3** cykly → ```O(n³)```
+
+Pro malé n (např. n=10) je to v pohodě.
+Pro velké n (n=10^6) je to katastrofa – čas roste **násobně**, ne lineárně.
+
+### Jak to optimalizovat
+
+- 1) Nahrazení vnořeného cyklu vhodnou datovou strukturou (hash look-up místo hledání v seznamu)
+
+**Problém (O(n²))**
+
+```JAVA
+for (Item a : listA) {
+    for (Item b : listB) {
+        if (a.id == b.id) {
+            // match
+        }
+    }
+}
+```
+
+**Řešení (O(n) průměrně): HashSet / HashMap**
+
+```JAVA
+Set<Integer> idsB = listB.stream()
+        .map(b -> b.id)
+        .collect(Collectors.toSet());  // HashSet
+
+for (Item a : listA) {
+    if (idsB.contains(a.id)) {
+        // match
+    }
+}
+```
+
+**Proč to funguje**: ```contains``` v ```HashSet``` je (průměrně) **O(1)** místo O(n).
+**Pozor na**
+- Implementuj správně ```equals()``` a ```hashCode()``` u klíčového typu (jinak ```contains``` selže).
+- Potřebuješ-li zachovat vložené pořadí, použij ```LinkedHashSet```; pro řazení ```TreeSet```.
+- Když je seznam **tříděný**, zvaž **binární hledání** (```Collections.binarySearch```) místo HashSetu.
+
+- 2) Early exit (předčasné ukončení) 
+```JAVA
+boolean exists = existsMatch(n, m);
+
+boolean existsMatch(int n, int m) {
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
+            if (found(i, j)) return true; // early return
+        }
+    }
+    return false;
+}
+```
+
+- 3) Předpočítání (loop-invariant code motion)
+
+**Špatně (počítáš stejné dokola):**
+
+```JAVA
+for (int i = 0; i < n; i++) {
+    for (int j = 0; j < m; j++) {
+        double s = Math.sin(i);   // počítá se m× pro stejné i
+        use(s, j);
+    }
+}
+```
+
+**Lépe (vynes ven to, co se nemění vnitřním cyklem):**
+
+```JAVA
+for (int i = 0; i < n; i++) {
+    double s = Math.sin(i);       // 1× pro každé i
+    for (int j = 0; j < m; j++) {
+        use(s, j);
+    }
+}
+```
