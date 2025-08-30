@@ -63,4 +63,17 @@ Na rozdíl od **regression modelu**, jehož výstupem je číslo, classification
   - **sníh**
   - **déšť se sněhem**
 
+# Unsupervised Learning
 
+Unsupervised learning modely provádějí předpovědi na základě dat, která neobsahují žádné správné odpovědi. Cílem modelu je indentifikovat smysluplné vzorce v datech.
+
+Jinými slovy, model nemá žádné vodítko, jak jednotlivé údaje kategorizovat, ale musí odvodit vlastní pravidla.
+
+bězně používaný unsupervised learning model využívá techniku svanou shlukování (clustering). Mode vyhledává datové body, které vymazují přirozené seskupení.
+
+
+![clustering02](pictures/clustering-02.png)
+**obrázek 1**. Model ML seskupující podobné datové body.
+
+![clustering04](pictures/clustering-04.png)
+**obrázek 2**. Skupiny clusterů s přirozenými hranicemi.
