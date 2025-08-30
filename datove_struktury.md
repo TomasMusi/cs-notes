@@ -364,3 +364,6 @@ Indexování v poli umožňuje efektivní nalezení rodičů i dětí bez pointe
 
 **Cache locality:** velmi dobrá (blokové načítání).
 **Kdy vybrat:** Databázové indexy, souborové systémy.
+
+![CommonDataStru](pictures/CommonDataStruc.png)
+![ArraySort](pictures/ArraySort.png)
