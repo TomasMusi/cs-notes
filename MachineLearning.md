@@ -76,4 +76,4 @@ bězně používaný unsupervised learning model využívá techniku svanou shlu
 **obrázek 1**. Model ML seskupující podobné datové body.
 
 ![clustering04](pictures/clustering-04.png)
-**obrázek 2**. Skupiny clusterů s přirozenými hranicemi.
+**obrázek 2**. Skupiny clusterů s přirozenými hranicemi..
