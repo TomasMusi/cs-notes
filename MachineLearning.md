@@ -65,29 +65,46 @@ Na rozdíl od **regression modelu**, jehož výstupem je číslo, classification
 
 # Unsupervised Learning
 
-Unsupervised learning modely provádějí předpovědi na základě dat, která neobsahují žádné správné odpovědi. Cílem modelu je indentifikovat smysluplné vzorce v datech.
+**Unsupervised learning modely** provádějí předpovědi na základě dat, která **neobsahují žádné správné odpovědi**.  
+Cílem modelu je identifikovat smysluplné vzorce v datech.
 
-Jinými slovy, model nemá žádné vodítko, jak jednotlivé údaje kategorizovat, ale musí odvodit vlastní pravidla.
+Jinými slovy, model nemá žádné vodítko, jak jednotlivé údaje kategorizovat, ale musí odvodit **vlastní pravidla**.
 
-bězně používaný unsupervised learning model využívá techniku svanou shlukování (clustering). Mode vyhledává datové body, které vymazují přirozené seskupení.
+---
 
+## 📌 Clustering (shlukování)
 
-![clustering02](pictures/clustering-02.png)
-**obrázek 1**. Model ML seskupující podobné datové body.
+Běžně používaný unsupervised learning model využívá techniku zvanou **clustering**.  
+Model vyhledává datové body, které vytvářejí přirozené seskupení.
 
-![clustering04](pictures/clustering-04.png)
-**obrázek 2**. Skupiny clusterů s přirozenými hranicemi.
+![clustering02](pictures/clustering-02.png)  
+**Obrázek 1**. Model ML seskupující podobné datové body.
 
+![clustering04](pictures/clustering-04.png)  
+**Obrázek 2**. Skupiny clusterů s přirozenými hranicemi.
 
-Clustering se liší od classification tím, že kategorie nejsou definovány vámi. 
+---
 
-Například Unsupervised model může seskupi dataset o počasí na základě teploty a odhalit segmentace, které definují roční období.
+## 🔄 Rozdíl mezi Clustering a Classification
+Clustering se liší od **classification** tím, že **kategorie nejsou předem definovány**.  
 
-Poté můžete pojmenovat tyto clustery na základě svého porozumění datovému souboru. 
+- U classification určíte kategorie vy (např. „spam / ne-spam“).  
+- U clusteringu model sám najde skupiny podle podobnosti.
 
-![clusteirng01](pictures/clustering-01.png)
-**obrázek 3**. Model ML seskupující podobné meterologické vzorce.
+---
 
-![clustering03](pictures/clustering-03.png)
-**obrázek 4**. Clustery meterologických jevů označené jako sníh, déšt se sněhem, déšť a bez deště.
+## 🌦 Příklad z praxe
+Unsupervised model může seskupit dataset o **počasí** na základě teploty a odhalit segmentace, které odpovídají **ročním obdobím**.  
+Poté můžete **pojmenovat clustery** na základě svého porozumění datům.
+
+![clusteirng01](pictures/clustering-01.png)  
+**Obrázek 3**. Model ML seskupující podobné meteorologické vzorce.
+
+![clustering03](pictures/clustering-03.png)  
+**Obrázek 4**. Clustery meteorologických jevů označené jako:  
+- sníh  
+- déšť se sněhem  
+- déšť  
+- bez deště
+
 
