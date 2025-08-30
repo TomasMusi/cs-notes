@@ -2,11 +2,11 @@
 
 - je mnohem lepší, než klasický programování, neboť ML dokáže předpovídat, když má spousty dat.
 
--Řekněme, že máme weather app. Mohli bychom velmi složitě matematicky vypočítat, jaké bude počasí a nebo lépe a efektivněji dat spousty dat a udělat strojové učení.
+- Řekněme, že máme weather app. Mohli bychom velmi složitě matematicky vypočítat, jaké bude počasí a nebo lépe a efektivněji dat spousty dat a udělat strojové učení.
 
 - Machine learning je process trénování softwaru, zvaný model. Model je matematický vztah odvozený z dat, který systém ML používá k vytváření předpovědí.
 
-- Typ yML (dělí se do jedné nebo více kategorií podle toho, jak se učí poředpovídat nebo generovat Obsah.)
+- Typy ML (dělí se do jedné nebo více kategorií podle toho, jak se učí poředpovídat nebo generovat Obsah.)
     
     - Supervised Learning
     - Unsupervised Learning
@@ -31,4 +31,36 @@ Regresivní model předpovídá číselnou hodnotu. Například model počasí, 
 |:--------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------|
 | Budoucí cena nemovitosti  | m2, PSČ, počet ložnic a koupelen... | Cena domu.                                   |
 | Budoucí doba jízdyy    | historické dopravní podmínky.... atd | čas v minutách a sekundách. |
+
+*Classification*
+
+
+**Classification model** předpovídá pravděpodobnost, že něco patří do určité kategorie.  
+
+Na rozdíl od **regression modelu**, jehož výstupem je číslo, classification model vydává hodnotu, která udává, zda něco patří do určité kategorie.
+
+---
+
+## 📌 Příklady použití
+- Předpověď, zda e-mail je **spam** nebo **není spam**.
+- Rozpoznání, zda fotografie obsahuje **kočku** nebo ne.
+
+---
+
+## 📂 Typy klasifikace
+
+### 1. Binární klasifikace
+- Výstupní třída obsahuje **pouze dvě hodnoty**.  
+- Příklad: model, který predikuje buď:
+  - **déšť**
+  - **žádný déšť**
+
+### 2. Vícerozměrná klasifikace
+- Výstupní třída obsahuje **více než dvě hodnoty**.  
+- Příklad: model, který může predikovat:
+  - **déšť**
+  - **kroupy**
+  - **sníh**
+  - **déšť se sněhem**
+
 
