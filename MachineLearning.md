@@ -107,4 +107,14 @@ Poté můžete **pojmenovat clustery** na základě svého porozumění datům.
 - déšť  
 - bez deště
 
+# Reinforcement Learning
 
+**Reinforcement learning** modely provádějí předpovědi na základě **odměn nebo trestů** za akce provedené v daném prostředí.  
+
+Reinforcement learning systém následně generuje pravidla, která definují **nejlepší strategii** pro získání co největšího počtu odměn.
+
+---
+
+## 📌 Příklady použití
+- Výcvik **robotů** k provádění úkolů, například chůze po místnosti.  
+- **Softwarové programy**, například **AlphaGo**, k hraní hry Go.
