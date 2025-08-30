@@ -76,4 +76,18 @@ bězně používaný unsupervised learning model využívá techniku svanou shlu
 **obrázek 1**. Model ML seskupující podobné datové body.
 
 ![clustering04](pictures/clustering-04.png)
-**obrázek 2**. Skupiny clusterů s přirozenými hranicemi..
+**obrázek 2**. Skupiny clusterů s přirozenými hranicemi.
+
+
+Clustering se liší od classification tím, že kategorie nejsou definovány vámi. 
+
+Například Unsupervised model může seskupi dataset o počasí na základě teploty a odhalit segmentace, které definují roční období.
+
+Poté můžete pojmenovat tyto clustery na základě svého porozumění datovému souboru. 
+
+![clusteirng01](pictures/clustering-01.png)
+**obrázek 3**. Model ML seskupující podobné meterologické vzorce.
+
+![clustering03](pictures/clustering-03.png)
+**obrázek 4**. Clustery meterologických jevů označené jako sníh, déšt se sněhem, déšť a bez deště.
+
