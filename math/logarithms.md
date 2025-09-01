@@ -123,3 +123,25 @@ $\log_{b}\\left(\tfrac{x}{y}\right) = \log_{b}(x) - \log_{b}(y)$
 
 Například:  
 $\log_{2}\\left(\tfrac{8}{2}\right) = \log_{2}(8) - \log_{2}(2) = 3 - 1 = 2$
+
+
+### 3. Mocnina
+
+$\log_{b}(x^{n}) = n \cdot \log_{b}(x)$
+
+
+$\log_{2}(8^{2}) = 2 \cdot \log_{2}(8) = 2 \cdot 3 = 6$
+
+### 4. Změna základu
+
+$\log_{a}(x) = \frac{\log_{b}(x)}{\log_{b}(a)}$
+
+Například:
+
+$\log_{2}(10) = \frac{\log_{10}(10)}{\log_{10}(2)} = \frac{1}{0.30} \approx 3.32$
+
+Dobrý využít, když máš kalkulačku, která umí jen log $log_{10}$.
+
+### Poznámka
+Logaritmická funkce: pro jakékoliv kladné číslo $a \neq 1$ a $x > 0$.  
+Graf je klesající, když $0 < a < 1$, a rostoucí, když $a > 1$.
