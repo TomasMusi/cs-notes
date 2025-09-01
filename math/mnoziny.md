@@ -44,7 +44,7 @@ Racionální číslo je každé číslo, které můžeme zapsat jako zlomek dvou
 Například:  
 $3 = \tfrac{3}{1}$  
 
-$\mathbb{Q} = \left\{ \tfrac{a}{b} \;\middle|\; a \in \mathbb{Z},\, b \in \mathbb{Z},\, b \neq 0 \right\}$
+$\mathbb{Q} = \{\, \tfrac{a}{b} \;|\; a \in \mathbb{Z},\; b \in \mathbb{Z},\; b \neq 0 \,\}$
 
 ## Celé číslo
 
