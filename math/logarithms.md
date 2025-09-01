@@ -98,6 +98,6 @@ Na desetinný výsledek:
 
 s úpravami.
 
-- log₂(4·8) = log₂(32) = 5 
-- log₃($\frac{81}{9}$) = log₃(9) = 2 
-- log₅(25³) = 3, protože log₅(25) = 2 → 2·3 = 6 
+- $\log_{2}(4 \cdot 8) = \log_{2}(32) = 5$
+- $\log_{3}\!\left(\tfrac{81}{9}\right) = \log_{3}(9) = 2$
+- $\log_{5}(25^{3}) = 3$, protože $\log_{5}(25) = 2 \;\;\rightarrow\;\; 2 \cdot 3 = 6$
