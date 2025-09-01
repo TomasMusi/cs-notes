@@ -111,9 +111,20 @@ $A \cap B = \{3\}$
 
 ## 3. Rozdíl (DIFFERENCE)
 
-Značíme: $A \setminus B$  
+Značíme: $A - B$  
 
 Příklad:  
 $A = \{1,2,3\}, \; B = \{3,4,5\}$  
 
-$A \setminus B = \{1,2\}$
+$A - B = \{1,2\}$
+
+# Vennovy diagramy
+
+## Průnik množin
+
+$A = \{1,2,5\}$  
+$B = \{3,4,5\}$  
+
+$A \cap B = \{5\}$
+
+![VenovvyDiagramy](pictures/venn_prunik.png)
