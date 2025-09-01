@@ -65,3 +65,18 @@ Definujeme tedy **imaginární jednotku $i$**:
 $i^{2} = -1$
 
 Například: $\sqrt{-4} = 2i$
+
+
+komplexní číslo je součet reálné části a imaginární částí.
+
+
+| Symbol        | Znamená        | Vysvětlení v běžné řeči              | Příklad                                    |
+|---------------|----------------|--------------------------------------|--------------------------------------------|
+| $\in$         | ,,je prvkem množiny"          | číslo nebo prvek je uvnitř množiny                 | $2 \in \{1,2,3\}$                          |
+| $\notin$      | ,,není prvkem množiny"     | „x nepatří do množiny“               | $5 \notin \{1,2,3\}$                       |
+| $\subset$     | Podmnožina     | „Všechno z levé množiny je i v pravé“                  | $\{1,2\} \subset \{1,2,3\}$                |
+| $\cup$        | Sjednocení (A nebo B)    | „všechno dohromady“                  | $A \cup B = \{1,2,3,5\}$                   |
+| $\cap$        | Průnik (A a zároveň B)         | „Jen to, co je v obou zároveň“                   | $A \cap B = \{2,3\}$                       |
+| $\setminus$   | Rozdíl         | „co zůstane v A, když odeberu prvky B“ | $\{1,2,3\} \setminus \{2,3\} = \{1\}$     |
+
+
