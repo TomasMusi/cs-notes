@@ -15,13 +15,14 @@ aⁿ = a · a · ... · a (n-krát)
 
 ### 1. Když násobíš dvě stejné základy:
 
-aᵐ · aⁿ = aᵐ⁺ⁿ
+$a^{m} \cdot a^{n} = a^{m+n}$
 
-Když máš 2³ · 2⁴ → máš (2·2·2) · (2·2·2·2)  
+Když máš:  
+$2^{3} \cdot 2^{4} → (2 \cdot 2 \cdot 2) \cdot (2 \cdot 2 \cdot 2 \cdot 2)$  
 
-To je 7 dvojek = 2⁷
+To je 7 dvojek = $2^{7}$  
 
-2³ · 2⁴ = 2³⁺⁴ = 2⁷
+$2^{3} \cdot 2^{4} = 2^{3+4} = 2^{7}$
 
 **Sečteš exponenty**
 
