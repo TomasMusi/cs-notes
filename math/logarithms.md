@@ -27,13 +27,13 @@ To je 7 dvojek = 2⁷
 
 ### 2. Když dělíš dvě stejné základy:
 
-aᵐ / aⁿ = aᵐ⁻ⁿ
+$\frac{aᵐ}{aⁿ}$ = aᵐ⁻ⁿ
 
 Například:
 
 $\frac{2⁵}{2²}$ = $\frac{(2·2·2·2·2)}{(2·2)}$  = 2³
 
-2⁵ / 2² = 2⁵⁻² = 2³
+$\frac{2⁵}{2²}$ = 2⁵⁻² = 2³
 
 **Odečteš exponenty**
 
@@ -54,11 +54,11 @@ a⁰ = 1
 
 ### 5. Záporný exponent znamená „obráceně“:
 
-a⁻ⁿ = 1 / aⁿ
+a⁻ⁿ = $\frac{1}{aⁿ}$
 
 Například:
 
-2⁻³ = 1 / 2³ = 1 / 8
+2⁻³ = $\frac{1}{2³}$ = $\frac{1}{8}$
 
 
 # Logaritmus
