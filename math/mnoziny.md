@@ -82,4 +82,9 @@ komplexní číslo je součet reálné části a imaginární částí.
 | $\land$       | A zároveň (logická spojka) | Obě podmínky musí být splněné | $A \in \mathbb{N} \land A < 5$ |
 | $\lor$        | Nebo (logická spojka)    | platí alespoň jedna podmínka           | $(x=0) \lor (x=1)$                         |
 | $\implies$    | Implikuje (jestliže, pak) | jestliže platí první, pak platí druhé | $x>2 \implies x>0$                         |
+| $\iff$        | Ekvivalence                  | platí právě tehdy, když platí obě strany | $x = 2 \iff x^{2} = 4$ |
+| $\forall$     | Pro všechna / pro každé      | pro každé x v množině A platí P(x) | $\forall x \in A:\; P(x)$ |
+| $\exists$     | Existuje                     | existuje alespoň jeden prvek             | $\exists x \in \mathbb{N},\; x^2 = 4$      |
+| $R \subseteq A \times B$ | Relace            | množina uspořádaných dvojic              | $R = \{(x,y) \mid x<y,\; x,y \in \{1,2,3\}\}$ |
+
 
