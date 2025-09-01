@@ -153,16 +153,6 @@ Logaritmické Funkce jsou jako stroj, kam dáváš čísla a on ti vrací jiné 
 X je na vodorovné ose
 Y je na svislé ose
 
-Y
-↑
-4 |
-3 |
-2 |
-1 |
-0 +----------------→ X
-   0   1   2   3   4
-
-
 $y = \log_{2}(x)$   = „Najdi, na kolikátou musím umocnit 2, abych dostal $x$. To bude výsledek $y$.“
 
 ### Kroky
