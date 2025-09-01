@@ -78,7 +78,7 @@ komplexní číslo je součet reálné části a imaginární částí.
 | $\cup$        | Sjednocení (A nebo B)    | „všechno dohromady“                  | $A \cup B = \{1,2,3,5\}$                   |
 | $\cap$        | Průnik (A a zároveň B)         | „Jen to, co je v obou zároveň“                   | $A \cap B = \{2,3\}$                       |
 | -   | Rozdíl         | „co zůstane v A, když odeberu prvky B“ | $\{1,2,3\} - \{2,3\} = \{1\}$     |
-| $\emptyset$   | Prázdná množina          | množina, která neobsahuje žádný prvek  | $A \cap $B = \emptyset$             |
+| $\emptyset$   | Prázdná množina          | množina, která neobsahuje žádný prvek  | $A \cap B = \emptyset$ |
 | $\land$       | A zároveň (logická spojka) | Obě podmínky musí být splněné | $A \in \mathbb{N} \land A < 5$ |
 | $\lor$        | Nebo (logická spojka)    | platí alespoň jedna podmínka           | $(x=0) \lor (x=1)$                         |
 | $\implies$    | Implikuje (jestliže, pak) | jestliže platí první, pak platí druhé | $x>2 \implies x>0$                         |
