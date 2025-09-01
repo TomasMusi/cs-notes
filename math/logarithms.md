@@ -58,7 +58,7 @@ a⁻ⁿ = $\frac{1}{aⁿ}$
 
 Například:
 
-2⁻³ = $\frac{1}{2³}$ = $\frac{1}{8}$
+$2^{-3}$ = $\frac{1}{2³}$ = $\frac{1}{8}$
 
 
 # Logaritmus
