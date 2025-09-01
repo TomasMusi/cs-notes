@@ -24,6 +24,6 @@ $A = \{1,2,3\}$
 
 ### 2. Popisem vlastností
 
-$B = \{x \in \mathbb{W} \mid x < 5\}$
+$B = \{\, x \in \mathbb{N} \mid x < 5 \,\}$
 (x je z přirozených čísel a zároveň, která jsou menší než 5)
 
