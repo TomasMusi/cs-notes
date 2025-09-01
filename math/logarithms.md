@@ -143,5 +143,4 @@ $\log_{2}(10) = \frac{\log_{10}(10)}{\log_{10}(2)} = \frac{1}{0.30} \approx 3.32
 Dobrý využít, když máš kalkulačku, která umí jen log $log_{10}$.
 
 ### Poznámka
-Logaritmická funkce: pro jakékoliv kladné číslo $a \neq 1$ a $x > 0$.  
-Graf je klesající, když $0 < a < 1$, a rostoucí, když $a > 1$.
+Logaritmické Funkce jsou jako stroj, kam dáváš čísla a on ti vrací jiné číslo. Graf je kreslený záznam toho, co ten stroj dělá.
