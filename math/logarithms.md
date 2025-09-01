@@ -75,7 +75,7 @@ log₂(8) = 3
 
 Na kolikrát musím umocnit číslo b, abych dostal a?
 
-log_b(a) = x
+$\log_{b}(a) = x$
 
 - b = základ logaritmu (číslo, které umocňuješ.)
 - a = výsledek (co chceš dostat) 
