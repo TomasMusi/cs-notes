@@ -59,3 +59,9 @@ $\sqrt{4} = 2$, protože $2 \cdot 2 = 4$
 
 Ale co $\sqrt{-4}$?  
 Neexistuje žádné reálné číslo, které po umocnění na druhou dá $-4$.
+
+Definujeme tedy **imaginární jednotku $i$**:  
+
+$i^{2} = -1$
+
+Například: $\sqrt{-4} = 2i$
