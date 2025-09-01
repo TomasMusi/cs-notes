@@ -99,5 +99,5 @@ Na desetinný výsledek:
 s úpravami.
 
 - $\log_{2}(4 \cdot 8) = \log_{2}(32) = 5$
-- $\log_{3}\!\left(\tfrac{81}{9}\right) = \log_{3}(9) = 2$
+- $\log_{3}\\left(\tfrac{81}{9}\right) = \log_{3}(9) = 2$
 - $\log_{5}(25^{3}) = 3$, protože $\log_{5}(25) = 2 \;\;\rightarrow\;\; 2 \cdot 3 = 6$
