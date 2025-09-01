@@ -59,3 +59,39 @@ a⁻ⁿ = 1 / aⁿ
 Například:
 
 2⁻³ = 1 / 2³ = 1 / 8
+
+
+# Logaritmus
+
+Co je logaritmus?
+Na kolikrát musím umocnit základ, abych dostal určité číslo.
+
+Například:
+2¹ = 2 
+2² = 4 
+2³ = 8 
+
+log₂(8) = 3
+
+
+Na kolikrát musím umocnit číslo b, abych dostal a?
+
+log_b(a) = x
+
+- b = základ logaritmu (číslo, které umocňuješ.)
+- a = výsledek (co chceš dostat) 
+- x = exponent (odpověď, kterou hledáš)
+
+**Logaritmus je inverzní operace k mocnině**
+
+## Příklady
+
+- log₂(8) = 3 
+- log₁₀(1000) = 3 
+- log₂(64) = 6 
+- log₅(1) = 0 
+- log₄(64) = 3 
+
+Na desetinný výsledek: 
+- log₁₀(2) ≈ 0,30 
+- log₂(10) ≈ 3,32 
