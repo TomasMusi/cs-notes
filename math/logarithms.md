@@ -172,7 +172,7 @@ $y = \log_{2}(x)$   = „Najdi, na kolikátou musím umocnit 2, abych dostal $x$
 
 tudíž vybereme např:
 
-$X = \{1,2,4,8,16\}
+$X = \{1,2,4,8,16\}$
 
 2. Vypočítáme hodnoty:  
 
@@ -184,7 +184,9 @@ $X = \{1,2,4,8,16\}
 
 3. Vepíšeme do grafu
 
-$X = \{1,2,4,8,16\}
-$Y = \{0,1,2,3,4\}
+$$
+X = \{1,2,4,8,16\} \\
+Y = \{0,1,2,3,4\}
+$$
 
 ![Graf](pictures/log2_graph.png)
