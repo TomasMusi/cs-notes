@@ -24,6 +24,15 @@ $A = \{1,2,3\}$
 
 ### 2. Popisem vlastností
 
-$B = \{\, x \in \mathbb{N} \mid x < 5 \,\}$
+$B = {\, x \in \mathbb{N} \mid x < 5 \,\}$
 (x je z přirozených čísel a zároveň, která jsou menší než 5)
 
+
+
+| Značka     | Název             | Význam                                           | Příklad                  |
+|------------|------------------|--------------------------------------------------|--------------------------|
+| $\mathbb{N}$ | Přirozená čísla  | $1,2,3,4,5,\dots$                               | Vše co je v realitě  |
+| $\mathbb{Z}$ | Celá čísla       | $\dots,-3,-2,-1,0,1,2,3,\dots$                  | $-1,3,-5,0,25$           |
+| $\mathbb{Q}$ | Racionální čísla | $\mathbb{Q} \supset \mathbb{Z}$ (zlomky, desetinná čísla) | $\tfrac{1}{2}, 0.3, -\tfrac{7}{4}$ |
+| $\mathbb{R}$ | Reálná čísla     | Všechna čísla na číselné ose                    | odmocniny, $\pi$         |
+| $\mathbb{C}$ | Komplexní čísla  | Reálná čísla + imaginární jednotky              | $5i,\, 2-3i$             |
