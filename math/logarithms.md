@@ -71,7 +71,7 @@ Například:
 2² = 4 
 2³ = 8 
 
-log₂(8) = 3
+$\log_{2}(8) = 3$
 
 Na kolikrát musím umocnit číslo b, abych dostal a?
 
@@ -85,15 +85,16 @@ $\log_{b}(a) = x$
 
 ## Příklady
 
-- log₂(8) = 3 
-- log₁₀(1000) = 3 
-- log₂(64) = 6 
-- log₅(1) = 0 
-- log₄(64) = 3 
+- $\log_{2}(8) = 3$
+- $\log_{10}(1000) = 3$
+- $\log_{2}(64) = 6$
+- $\log_{5}(1) = 0$
+- $\log_{4}(64) = 3$
 
 Na desetinný výsledek: 
-- log₁₀(2) ≈ 0,30 
-- log₂(10) ≈ 3,32 
+- $\log_{10}(2) \approx 0.30$
+- $\log_{2}(10) \approx 3.32$
+
 
 s úpravami.
 
