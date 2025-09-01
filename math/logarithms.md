@@ -54,7 +54,7 @@ a⁰ = 1
 
 ### 5. Záporný exponent znamená „obráceně“:
 
-a⁻ⁿ = $\frac{1}{aⁿ}$
+$a^{-n}$ = $\frac{1}{aⁿ}$
 
 Například:
 
