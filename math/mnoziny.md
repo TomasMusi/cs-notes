@@ -49,3 +49,13 @@ $\mathbb{Q} = \{\, \tfrac{a}{b} \;|\; a \in \mathbb{Z},\; b \in \mathbb{Z},\; b 
 ## Celé číslo
 
 Každé celé číslo $\mathbb{Z}$  krom nuly je zároveň racionální číslo.
+
+## Komplexní číslo
+
+důvod proč to vzniklo a co to odlišuje od $\mathbb{R}$ je, že máme imaginární čísla i
+
+
+$\sqrt{4} = 2$, protože $2 \cdot 2 = 4$  
+
+Ale co $\sqrt{-4}$?  
+Neexistuje žádné reálné číslo, které po umocnění na druhou dá $-4$.
