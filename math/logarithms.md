@@ -144,3 +144,30 @@ Dobrý využít, když máš kalkulačku, která umí jen log $log_{10}$.
 
 ### Poznámka
 Logaritmické Funkce jsou jako stroj, kam dáváš čísla a on ti vrací jiné číslo. Graf je kreslený záznam toho, co ten stroj dělá.
+
+
+### Tvorba grafu
+- Osa $X$ = hodnoty/vstupy (např. $1,2,3,8,\dots$)  
+- Osa $Y$ = výsledky (např. $0,1,2,3$)  
+
+X je na vodorovné ose
+Y je na svislé ose
+
+
+
+$$
+\begin{tikzpicture}[scale=1]
+  % Osa X
+  \draw[->] (-0.5,0) -- (5,0) node[right] {$x$};
+  % Osa Y
+  \draw[->] (0,-0.5) -- (0,5) node[above] {$y$};
+
+  % Body na ose X
+  \foreach \x in {1,2,3,4}
+    \draw (\x,0.1) -- (\x,-0.1) node[below] {\x};
+
+  % Body na ose Y
+  \foreach \y in {1,2,3,4}
+    \draw (0.1,\y) -- (-0.1,\y) node[left] {\y};
+\end{tikzpicture}
+$$
