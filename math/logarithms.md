@@ -18,6 +18,7 @@ aⁿ = a · a · ... · a (n-krát)
 $a^{m} \cdot a^{n} = a^{m+n}$
 
 Když máš:  
+
 $2^{3} \cdot 2^{4} → (2 \cdot 2 \cdot 2) \cdot (2 \cdot 2 \cdot 2 \cdot 2)$  
 
 To je 7 dvojek = $2^{7}$  
@@ -102,4 +103,23 @@ s úpravami.
 
 - $\log_{2}(4 \cdot 8) = \log_{2}(32) = 5$
 - $\log_{3}\\left(\tfrac{81}{9}\right) = \log_{3}(9) = 2$
-- $\log_{5}(25^{3}) = 3$, protože $\log_{5}(25) = 2 \\\rightarrow\\ 2 \cdot 3 = 6$
+- $\log_{5}(25^{3}) = 3$, protože $\log_{5}(25) = 2 → 2 \cdot 3 = 6$
+
+
+# Logaritmická pravidla
+
+### 1. Součin (násobení)
+
+$\log_{b}(x \cdot y) = \log_{b}(x) + \log_{b}(y)$
+
+Například:  
+$\log_{2}(4 \cdot 8) = \log_{2}(4) + \log_{2}(8) = 2 + 3 = 5$
+
+---
+
+### 2. Podíl (dělení)
+
+$\log_{b}\\left(\tfrac{x}{y}\right) = \log_{b}(x) - \log_{b}(y)$
+
+Například:  
+$\log_{2}\\left(\tfrac{8}{2}\right) = \log_{2}(8) - \log_{2}(2) = 3 - 1 = 2$
