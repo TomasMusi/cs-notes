@@ -67,9 +67,9 @@ Co je logaritmus?
 Na kolikrát musím umocnit základ, abych dostal určité číslo.
 
 Například:
-2¹ = 2 
-2² = 4 
-2³ = 8 
+- $2^{1} = 2$
+- $2^{2} = 4$
+- $2^{3} = 8$
 
 $\log_{2}(8) = 3$
 
@@ -100,4 +100,4 @@ s úpravami.
 
 - $\log_{2}(4 \cdot 8) = \log_{2}(32) = 5$
 - $\log_{3}\\left(\tfrac{81}{9}\right) = \log_{3}(9) = 2$
-- $\log_{5}(25^{3}) = 3$, protože $\log_{5}(25) = 2 \;\;\rightarrow\;\; 2 \cdot 3 = 6$
+- $\log_{5}(25^{3}) = 3$, protože $\log_{5}(25) = 2 \\\rightarrow\\ 2 \cdot 3 = 6$
