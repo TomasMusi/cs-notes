@@ -94,3 +94,9 @@ log_b(a) = x
 Na desetinný výsledek: 
 - log₁₀(2) ≈ 0,30 
 - log₂(10) ≈ 3,32 
+
+s úpravami.
+
+- log₂(4·8) = log₂(32) = 5 
+- log₃($\frac{81}{9}$) = log₃(9) = 2 
+- log₅(25³) = 3, protože log₅(25) = 2 → 2·3 = 6 
