@@ -153,21 +153,38 @@ Logaritmické Funkce jsou jako stroj, kam dáváš čísla a on ti vrací jiné 
 X je na vodorovné ose
 Y je na svislé ose
 
+Y
+↑
+4 |
+3 |
+2 |
+1 |
+0 +----------------→ X
+   0   1   2   3   4
 
 
-$$
-\begin{tikzpicture}[scale=1]
-  % Osa X
-  \draw[->] (-0.5,0) -- (5,0) node[right] {$x$};
-  % Osa Y
-  \draw[->] (0,-0.5) -- (0,5) node[above] {$y$};
+$y = \log_{2}(x)$   = „Najdi, na kolikátou musím umocnit 2, abych dostal $x$. To bude výsledek $y$.“
 
-  % Body na ose X
-  \foreach \x in {1,2,3,4}
-    \draw (\x,0.1) -- (\x,-0.1) node[below] {\x};
+### Kroky
 
-  % Body na ose Y
-  \foreach \y in {1,2,3,4}
-    \draw (0.1,\y) -- (-0.1,\y) node[left] {\y};
-\end{tikzpicture}
-$$
+1. Vybereme několik kladných hodnot.  
+   (Logaritmus nefunguje pro $x \leq 0$.)  
+
+tudíž vybereme např:
+
+$X = \{1,2,4,8,16\}
+
+2. Vypočítáme hodnoty:  
+
+- $y = \log_{2}(1) = 0$  
+- $y = \log_{2}(2) = 1$  
+- $y = \log_{2}(4) = 2$  
+- $y = \log_{2}(8) = 3$  
+- $y = \log_{2}(16) = 4$ 
+
+3. Vepíšeme do grafu
+
+$X = \{1,2,4,8,16\}
+$Y = \{0,1,2,3,4\}
+
+![Graf](pictures/log2_graph.png)
