@@ -87,4 +87,33 @@ komplexní číslo je součet reálné části a imaginární částí.
 | $\exists$     | Existuje                     | existuje alespoň jeden prvek             | $\exists x \in \mathbb{N},\; x^2 = 4$      |
 | $R \subseteq A \times B$ | Relace            | množina uspořádaných dvojic              | $R = \{(x,y) \mid x<y,\; x,y \in \{1,2,3\}\}$ |
 
+# Operace s množinami
 
+## 1. Sjednocení (UNION)
+
+Značíme: $A \cup B$  
+
+Příklad:  
+$A = \{1,2,3\}, \; B = \{3,4,5\}$  
+
+$A \cup B = \{1,2,3,4,5\}$
+
+## 2. Průnik (INTERSECTION)
+
+Značíme: $A \cap B$  
+
+Je to to, co je v obou.  
+
+Příklad:  
+$A = \{1,2,3\}, \; B = \{3,4,5\}$  
+
+$A \cap B = \{3\}$
+
+## 3. Rozdíl (DIFFERENCE)
+
+Značíme: $A \setminus B$  
+
+Příklad:  
+$A = \{1,2,3\}, \; B = \{3,4,5\}$  
+
+$A \setminus B = \{1,2\}$
