@@ -7,7 +7,7 @@ V matematice používáme různé způsoby, jak spočítat kolik různých možn
 ### Co to je?
 
 Variace znamenají, že při výběru záleží na pořadí.  
-Tzn. pokud máš tři různé vědci a vybířáš z nich, pak různé uspořádání těchto věcí (pořadí) znamená různé možnosti.
+Tzn. pokud máš tři různé věci a vybířáš z nich, pak různé uspořádání těchto věcí (pořadí) znamená různé možnosti.
 
 ### Vzorec
 $$
@@ -52,3 +52,77 @@ $$
 
 Kombinace znamenají, že při výběru **nezáleží na pořadí**.  
 Například pokud vyberu dvě barvy (**červenou a modrou**), je to stejné jako (**modrou a červenou**), protože pořadí není důležité.
+
+### Vzorec
+$$
+C(n,k) = \frac{n!}{k! \cdot (n-k)!}
+$$
+
+### Příklad
+Mějme 3 barvy: **červenou, modrou a zelenou**.  
+Kolik způsobů je možné vybrat 2 barvy, když **nezáleží na jejich pořadí**?
+
+- $n = 3$ (3 barvy)  
+- $k = 2$ (chceme vybrat 2 barvy)
+
+$$
+C(3,2) = \frac{3!}{2! \cdot (3-2)!} = \frac{6}{2 \cdot 1} = 3
+$$
+
+### Možnosti (výpis všech kombinací):
+1. červená, modrá  
+2. červená, zelená  
+3. zelená, modrá
+
+## 3. Permutace (P)
+
+### Co to je?
+
+Permutace je způsob, jak spočítat, kolika způsoby můžeme poskládat všechny věci, které máme k dispozici, a záleží na pořadí.
+
+### Vzorec
+$$
+P(n) = n!
+$$
+
+### Příklad
+Mějme 3 písmena: **A, B, C**.  
+Kolik způsobů je možné je uspořádat?
+
+- $n = 3$ (3 prvky)
+
+$$
+P(3) = 3! = 3 \cdot 2 \cdot 1 = 6
+$$
+
+### Možnosti (výpis všech permutací):
+1. ABC  
+2. ACB  
+3. BAC  
+4. BCA  
+5. CAB  
+6. CBA
+
+## Pravidlo součtu (pravidlo pro OR)
+
+### Co to je?
+Pravidlo součtu říká, že pokud máme dvě nebo více **nezávislých možností**, stačí je sečíst.
+
+### Příklad
+
+Mějme 3 nanuky (**čokoládový, jahodový a jablkový**)  
+a 2 dorty (**čokoládový a ovocný**).  
+
+Kolik možností máme, když si chceme vybrat **buď nanuk, nebo dort**?
+
+- Počet možností pro nanuky = 3  
+- Počet možností pro dorty = 2  
+
+$$
+3 + 2 = 5
+$$
+
+### Výsledek:
+Celkem máme **5 možností**.
+
+
