@@ -125,4 +125,23 @@ $$
 ### Výsledek:
 Celkem máme **5 možností**.
 
+## Pravidlo součinu (pravidlo pro AND)
 
+### Co to je?
+
+Pravidlo součinu říká, že pokud máme několik **závislých možností** a chceme je kombinovat, musíme je **vynásobit**.
+
+### Příklad
+Mějme 3 trička (**červené, modré, zelené**)  
+a 2 kalhoty (**džíny, sportovní**).  
+
+Kolik možností máme, když chceme zvolit **kombinaci oblečení**?
+
+- Počet možností pro trička = 3  
+- Počet možností pro kalhoty = 2  
+
+$$
+3 \cdot 2 = 6
+$$
+
+Celkem máme **6 možností**.
