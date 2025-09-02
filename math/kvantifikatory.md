@@ -48,3 +48,35 @@ $\exists x \in \mathbb{N},\ x^2 = -4$
 
 ### Poznámka
 $\exists !$ = „existuje právě jedno“
+
+
+## 3. Negace kvantifikátorů
+
+### a) Negace univerzálního kvantifikátoru
+
+$$
+\lnot \big(\forall x \in A : P(x)\big) \equiv \exists x \in A : \lnot P(x)
+$$
+
+**Slovy:**  
+,,Není pravda, že všichni poslouchají pravidlo" znamená ,,Existuje někdo, kdo ho neplní."
+
+**Příklad:**  
+$\lnot (\forall x \in \mathbb{N} : x > 0) \equiv \exists x \in \mathbb{N} : x < 0$  
+
+(Není pravda, že všechna přirozená čísla jsou větší než nula → Existuje přirozené číslo, které není větší než nula.)
+
+### b) Negace existenčního kvantifikátoru
+
+$$
+\lnot \big(\exists x \in A : P(x)\big) \equiv \forall x \in A : \lnot P(x)
+$$
+
+**Slovy:**  
+,,Není pravda,že někdo pravidlo splnil" znamená ,,Všichni ho nesplnili"
+
+**Příklad:**  
+$\lnot (\exists x \in \mathbb{N} : x < 0) \equiv \forall x \in \mathbb{N} : x \geq 0$  
+
+(Neexistuje žádné přirozené číslo menší než 0, znamená ,,Každé přirozené číslo je větší nebo rovno 0" )
+
