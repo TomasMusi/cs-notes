@@ -52,6 +52,41 @@
 
 - **$s$** – šikmá strana kužele (počítá se podle Pythagora: $s=\sqrt{r^2+v^2}$).
 
+### Příklad, abys to viděl
+
+Měj kvádr s hranami:
+
+- $a = 2 ,\text{cm}$
+
+- $b = 3 ,\text{cm}$
+
+- $c = 5 ,\text{cm}$ 
+
+**Povrch**
+
+Vzorec:
+
+$$
+S = 2(ab + bc + ac)
+$$
+
+Dosazení:
+
+$$
+S = 2(2 \cdot 3 + 3 \cdot 5 + 2 \cdot 5) = 2(6 + 15 + 10) = 62 \,\text{cm}^2
+$$
+
+**Objem**
+
+$$
+V = a \cdot b \cdot c
+$$
+
+Dosazení:
+
+$$
+V = 2 \cdot 3 \cdot 5 = 30 \,\text{cm}^3
+$$
 
 **📐 Povrch tělesa (označuje se $S$)**
 
