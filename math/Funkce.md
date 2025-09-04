@@ -116,9 +116,7 @@ Bijekce = každý student má jednu unikátní kartu a žádná nezbyla.
 ## 2. Lineární funkce
 
 - Předpis:  
-  $$
-  y = ax + b
-  $$
+  $y = ax + b$
   kde $a$ a $b$ jsou čísla.
   - $a$ se říká **směrnice** – určuje, jestli graf roste nebo klesá.
   - $b$ je **posun na ose y** – místo, kde graf protíná osu $y$.
