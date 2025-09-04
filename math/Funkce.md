@@ -106,9 +106,7 @@ Bijekce = každý student má jednu unikátní kartu a žádná nezbyla.
 ## 1. Konstantní funkce
 
 - Předpis:  
-  $$
-  y = c
-  $$
+  $y = c$
   kde $c$ je nějaké číslo (např. $y = 4$).
 - Graf je **vodorovná čára**.
 - Nezáleží, co dosadíš za $x$, vždy dostaneš stejný výsledek.
@@ -122,9 +120,7 @@ Bijekce = každý student má jednu unikátní kartu a žádná nezbyla.
   - $b$ je **posun na ose y** – místo, kde graf protíná osu $y$.
 
 **Příklad:**  
-$$
-y = 3x + 5
-$$
+$y = 3x + 5$
 
 - $a = 3$ → funkce **roste** (čím větší číslo u $x$, tím rychleji roste).  
 - $b = 5$ → graf protíná osu $y$ v bodě $(0,5)$.
@@ -132,17 +128,13 @@ $$
 ## 3. Kvadratická funkce
 
 - Předpis:  
-  $$
-  y = ax^2 + bx + c
-  $$
+  $y = ax^2 + bx + c$
 - Graf je **parabola**.
   - Pokud $a > 0$ → parabola otevřená nahoru.
   - Pokud $a < 0$ → parabola otevřená dolů.
 
 **Příklad:**  
-$$
-y = x^2 - 4
-$$  
+$y = x^2 - 4$  
 Parabola, která jde nahoru a protíná osu $y$ v bodě $(0, -4)$.
 
 ## Jak poznám, jestli je funkce rostoucí nebo klesající?
