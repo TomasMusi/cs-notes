@@ -101,3 +101,19 @@ Nejprve si vysvětlíme, co je to pointer. Pointer je jednoduše proměnná, kte
 V tomto přístupu pointery začínají na opačných koncích datové struktury a pohybují se směrem k sobě. Pointery upravují své pozice na základě porovnání, dokud není splněna určitá podmínka nebo se vzájemně neprotnou.
 
 Tato strategie je ideální pro problémy, kde potřebujeme porovnat prvky z opačných konců arraye nebo stringu. 
+
+**2) Parallel Pointers**
+
+V tomto přístupu začínají oba pointery na stejném konci, obvykle na začátku, a pohybují se stejným směrem. Tyto pointery obecně plní dvě odlišné, ale vzájemně se doplňující role. Pravý pointer se používá k prozkoumávání nebo hledání nových informací a levý pointer se používá ke sledování pokroku nebo k udržování omezení.
+
+**3) Trigger Based Pointers**
+
+V tomto přístupu posouváme první pointer nezávisle, dokud nenajde prvek, který splňuje určitou podmínku. Poté začneme procházet druhým pointerem, abychom našli další informace související s tím, co našel pravý pointer. Tato technika je obzvláště užitečná, když potřebujeme zpracovat prvky v jednotlivých fázích. Dobrým příkladem tohoto přístupu je nalezení uzlu n (příklad linked-listu) z konce linked listu. Pohybujeme prvním pointerem a postupujeme vpřed, jakmile první pointer dosáhne uzlu n. Inicializujeme druhý pointer na začátku a pohybujeme oběma pointery po jednom kroku, dokud první pointer nedosáhne konce. V tomto bodě bude druhý pointer na uzlu n od konce. 
+
+### Kdy použít?
+
+Lineární datové struktury, jako jsou arraye, linked-listy, stringy. Silným náznakem toho, že problém lze vyřešit pomocí techniky Two Pointers, je, pokud vstupní data následují předvídatelný vzorec, jako je seřazený array nebo palindromický string.
+
+Například v seřazeném arrayi posunutí pointeru doprava zajistí, že se vždy posunete k větší nebo stejné hodnotě, což usnadňuje porovnání hodnot u obou pointerů. 
+
+Dalším silným indikátorem toho, že problém lze vyřešit pomocí dvou pointerů, je situace, kdy se výslovně požaduje dvojice hodnot, které splňují podmínku, nebo výsledek, který lze vygenerovat ze dvou hodnot.
