@@ -66,3 +66,24 @@ Okna (vždy **3** prvky):
 **Time**: O(n) (každý prvek přidáš jednou a odečteš jednou)
 
 **2) Dynamic-size (délka se mění podle podmínky)**
+
+**Cíl: „nejdelší subarray s sum ≤ S“.**
+
+**Array**: ```A = [2, 1, 3, 1, 1, 1]```, **S = 5**
+
+Postup (držím ```sum```):
+
+- Start: ```L=0, R=0```, přidej ```2``` → ```sum=2``` (valid) → best=1
+- ```R=1```, přidej ```1``` → ```sum=3``` (valid) → best=2
+- ```R=2```, přidej ```3``` → ```sum=6``` (**>5**, nevalid) → posouvej **L**, dokud bude valid:
+    - odeber ```A[L]=2``` → ```sum=4```, ```L=1``` (teď valid) → délka = ```R-L+1 = 2```
+- ```R=3```, přidej ```1``` → ```sum=5``` (valid) → délka ```L=1..R=3``` je **3**, best=3
+- ```R=4```, přidej ```1``` → ```sum=6``` (**>5**) → shrink:
+    - odeber ```A[L]=1``` → ```sum=5```, ```L=2``` (valid) → délka ```2..4``` je 3 
+- ```R=5```, přidej ```1``` → ```sum=6``` (**>5**) → shrink:
+    - odeber ```A[L]=3``` → ```sum=3```, ```L=3``` (valid) → délka ```3..5``` je 3
+
+**Všimni si: R vždy +1** (přidávám prvek).
+Když poruším podmínku, **L posouvám klidně o 1, 2, 3…** zleva, **tak dlouho**, než je okno zase validní.
+
+**Poznámka:** Okno neskáče „o 3“. Když K=3, okno pokrývá 3 prvky, ale ukazatele posouváš po 1.  
