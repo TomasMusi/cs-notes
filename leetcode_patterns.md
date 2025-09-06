@@ -87,3 +87,9 @@ Postup (držím ```sum```):
 Když poruším podmínku, **L posouvám klidně o 1, 2, 3…** zleva, **tak dlouho**, než je okno zase validní.
 
 **Poznámka:** Okno neskáče „o 3“. Když K=3, okno pokrývá 3 prvky, ale ukazatele posouváš po 1.  
+
+## 2) Two Pointers
+
+### Co to je?
+
+Nejprve si vysvětlíme, co je to pointer. Pointer je jednoduše proměnná, která představuje index nebo pozici v datové struktuře, jako je array nebo link-list. Pomocí pointerů na různých pozicích můžeme efektivně porovnávat prvky a činit rozhodnutí, aniž bychom se museli spoléhat na nested loops, které by vedly k time complexity $On^{2}$. 
