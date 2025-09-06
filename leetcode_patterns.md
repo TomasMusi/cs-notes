@@ -93,3 +93,11 @@ Když poruším podmínku, **L posouvám klidně o 1, 2, 3…** zleva, **tak dlo
 ### Co to je?
 
 Nejprve si vysvětlíme, co je to pointer. Pointer je jednoduše proměnná, která představuje index nebo pozici v datové struktuře, jako je array nebo link-list. Pomocí pointerů na různých pozicích můžeme efektivně porovnávat prvky a činit rozhodnutí, aniž bychom se museli spoléhat na nested loops, které by vedly k time complexity $On^{2}$. 
+
+### 3 nejčastější strategie.
+
+**1) converging pointers**
+
+V tomto přístupu pointery začínají na opačných koncích datové struktury a pohybují se směrem k sobě. Pointery upravují své pozice na základě porovnání, dokud není splněna určitá podmínka nebo se vzájemně neprotnou.
+
+Tato strategie je ideální pro problémy, kde potřebujeme porovnat prvky z opačných konců arraye nebo stringu. 
