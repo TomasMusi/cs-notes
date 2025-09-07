@@ -232,5 +232,77 @@ $$\lim_{x \to 9} \frac{1}{\sqrt{x} + 3} = \frac{1}{\sqrt{9} + 3} = \frac{1}{3 + 
 ✅ **Výsledek:**
 $$\boxed{\lim_{x \to 9} \frac{\sqrt{x} - 3}{x - 9} = \tfrac{1}{6}}$$
 
+### Příklad
+
+Chci limitu, když $x \to 4$:
+
+$$\lim_{x \to 4} \frac{\tfrac{1}{\sqrt{x}} - \tfrac{1}{2}}{x - 4}$$
+
+---
+
+### 1) Přímé dosazení
+$$\frac{\tfrac{1}{\sqrt{4}} - \tfrac{1}{2}}{4 - 4}
+= \frac{\tfrac{1}{2} - \tfrac{1}{2}}{0}
+= \frac{0}{0}$$  
+
+→ **nedefinováno**, musíme upravit.
+
+---
+
+### 2) Úprava čitatele – společný jmenovatel
+V čitateli sečteme zlomky:
+
+$$\frac{1}{\sqrt{x}} - \frac{1}{2}
+= \frac{2 - \sqrt{x}}{2\sqrt{x}}$$
+
+---
+
+### 3) Úprava celého výrazu
+Dosadíme zpět:
+
+$$\frac{\tfrac{1}{\sqrt{x}} - \tfrac{1}{2}}{x - 4}
+= \frac{\tfrac{2 - \sqrt{x}}{2\sqrt{x}}}{x - 4}
+= \frac{2 - \sqrt{x}}{2\sqrt{x}\,(x - 4)}$$
+
+---
+
+### 4) Racionalizace (odstranění odmocniny z čitatele)
+Použijeme vzorec:
+
+$$(2 - \sqrt{x})(2 + \sqrt{x}) = 4 - x$$
+
+Vynásobíme čitatel i jmenovatel $(2 + \sqrt{x})$:
+
+$$\frac{2 - \sqrt{x}}{2\sqrt{x}(x - 4)} \cdot \frac{2 + \sqrt{x}}{2 + \sqrt{x}}
+= \frac{(2 - \sqrt{x})(2 + \sqrt{x})}{2\sqrt{x}(x - 4)(2 + \sqrt{x})}$$
+
+$$= \frac{4 - x}{2\sqrt{x}(x - 4)(2 + \sqrt{x})}$$
+
+A protože $4 - x = -(x - 4)$:
+
+$$= \frac{-(x - 4)}{2\sqrt{x}(x - 4)(2 + \sqrt{x})}
+= \frac{-1}{2\sqrt{x}(2 + \sqrt{x})}$$
+
+(pro $x \neq 4$)
+
+---
+
+### 5) Výpočet limity
+Teď už můžeme dosadit $x=4$:
+
+$$\lim_{x \to 4} \frac{-1}{2\sqrt{x}(2 + \sqrt{x})}
+= \frac{-1}{2 \cdot \sqrt{4} \cdot (2 + \sqrt{4})}$$
+
+$$= \frac{-1}{2 \cdot 2 \cdot (2 + 2)}
+= \frac{-1}{4 \cdot 4}
+= -\frac{1}{16}$$
+
+---
+
+✅ **Výsledek:**
+$$\boxed{\lim_{x \to 4} \frac{\tfrac{1}{\sqrt{x}} - \tfrac{1}{2}}{x - 4} = -\tfrac{1}{16}}$$
+
 
 ## Limita a Graf
+
+
