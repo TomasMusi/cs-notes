@@ -305,4 +305,37 @@ $$\boxed{\lim_{x \to 4} \frac{\tfrac{1}{\sqrt{x}} - \tfrac{1}{2}}{x - 4} = -\tfr
 
 ## Limita a Graf
 
+### Co je limita na grafu?
 
+Limita vyjadřuje, **k jaké hodnotě se blíží funkce**, když se $x$ blíží nějakému bodu (ale nemusí ho přímo dosáhnout).
+
+**Formálně:**
+
+$$\lim_{x \to a} f(x) = L$$
+
+znamená, že když se $x$ přibližuje k $a$ (zleva i zprava), pak $f(x)$ se blíží k číslu $L$.
+
+### Limita s pěkně definovaným bodem
+
+Funkce je spojitá (bez přerušení).
+
+**Příklad**
+
+$$f(x) = 2x$$
+
+Pro $x \to 3$ se graf blíží k $y = 6$.
+
+Na grafu je to vidět: když se pohybuješ k $x=3$, křivka se blíží k výšce $6$.
+
+### Limita s „dírou“
+
+Někdy funkce není v bodě definovaná, ale přesto má limitu.
+
+**Příklad:**
+
+$$f(x) = \frac{x - 2}{x^2 - 4}$$
+
+- v bodě $x=2$ je zlomek nedefinovaný (dělíme nulou).
+- po úpravě vyjde $f(x) = x+2$, což je přímka, ale v $x=2$ má díru.
+- graf ukazuje, že když $x \to 2$, funkce se blíží k $4$.
+- limita existuje, i když hodnota přímo v bodě ne.
