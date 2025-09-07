@@ -339,3 +339,19 @@ $$f(x) = \frac{x - 2}{x^2 - 4}$$
 - po úpravě vyjde $f(x) = x+2$, což je přímka, ale v $x=2$ má díru.
 - graf ukazuje, že když $x \to 2$, funkce se blíží k $4$.
 - limita existuje, i když hodnota přímo v bodě ne.
+
+### Levá a pravá limita
+
+Někdy funkce zleva a zprava míří jinam.
+
+**Příklad:**
+
+$$f(x) =
+\begin{cases}
+1 & x < 0 \\
+2 & x \geq 0
+\end{cases}$$
+
+- Když $x \to 0^-$ (zleva), $f(x) \to 1$.
+- Když $x \to 0^+$ (zprava), $f(x) \to 2$.
+- Limita v $0$ neexistuje, protože zleva a zprava dostaneme jiné výsledky.
