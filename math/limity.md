@@ -91,3 +91,51 @@ $$
 $$
 \lim_{x \to 2} \frac{x^2 - 4}{x - 2} = 4
 $$
+
+Chci limitu, když $x \to 3$:
+
+$$
+\lim_{x \to 3} \frac{x^3 - 27}{x - 3}
+$$
+
+### 1) Přímé dosazení
+$$
+\frac{3^3-27}{3-3}=\frac{27-27}{0}=\frac{0}{0}
+$$
+→ **nedefinováno** ⇒ výraz upravíme.
+
+---
+
+### 2) Rozklad pomocí rozdílu třetích mocnin
+
+**Pozor, správný vzorec je zvýrazněně:**
+
+\[
+\boxed{\;a^3-b^3=(a-b)\,(a^2+ab+b^2)\;}
+\]
+
+Použijeme jej pro \(a=x,\; b=3\):
+
+$$
+x^3-27=(x-3)\,(x^2+3x+9)
+$$
+
+Dosadíme do zlomku a pokrátíme \((x-3)\) (platí pro \(x\neq3\)):
+
+$$
+\frac{x^3-27}{x-3}=\frac{(x-3)(x^2+3x+9)}{x-3}=x^2+3x+9
+$$
+
+---
+
+### 3) Výpočet limity
+$$
+\lim_{x\to3}(x^2+3x+9)=3^2+3\cdot3+9=9+9+9=27
+$$
+
+---
+
+✅ **Výsledek:**
+$$
+\boxed{\;\displaystyle \lim_{x \to 3} \frac{x^3 - 27}{x - 3}=27\;}
+$$
