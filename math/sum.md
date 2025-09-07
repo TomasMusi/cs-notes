@@ -9,6 +9,13 @@ $$\sum_{i=1}^{n} a_i$$
 To znamená:
 - „Sečti všechny členy $a_i$ od $i=1$ do $i=n$.“
 
+**Co znamenají jednotlivé části?**
+
+- $\sum$ – řecké písmeno sigma, znamená „suma“ = součet.
+- $i=1$ – **odkud začínám počítat** (spodní index). Tady od 1.
+- $n$ – kde končím (horní index). Tady u čísla $n$.
+- $a_i$ – obecný **člen součtu** (může to být číslo, výraz, mocnina, zlomek…).
+
 ### Příklad 1
 
 $$\sum_{i=1}^{5} i$$
