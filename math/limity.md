@@ -92,6 +92,9 @@ $$
 \lim_{x \to 2} \frac{x^2 - 4}{x - 2} = 4
 $$
 
+
+### Příklad
+
 Chci limitu, když $x \to 3$:
 
 $$
@@ -125,11 +128,56 @@ $$
 ---
 
 ### 3) Výpočet limity
-$$
-\lim_{x \to 3}(x^2+3x+9)=3^2+3\cdot3+9=9+9+9=27
-$$
+$$\lim_{x \to 3}(x^2+3x+9)=3^2+3\cdot3+9=9+9+9=27$$
 
 ---
 
 ✅ **Výsledek:**
 $$\boxed{\lim_{x \to 3} \frac{x^3 - 27}{x - 3} = 27}$$
+
+
+### Příklad
+
+Chci limitu, když $x \to 3$:
+
+$$\lim_{x \to 3} \frac{\tfrac{1}{x} - \tfrac{1}{3}}{x - 3}$$
+
+---
+
+### 1) Přímé dosazení
+$$\frac{\tfrac{1}{3} - \tfrac{1}{3}}{3 - 3} = \frac{0}{0}$$
+→ **nedefinováno**, musíme upravit.
+
+---
+
+### 2) Úprava čitatele – společný jmenovatel
+V čitateli je rozdíl zlomků, dáme je na společný jmenovatel:
+
+$$\frac{1}{x} - \frac{1}{3} = \frac{3 - x}{3x}$$
+
+---
+
+### 3) Úprava celého výrazu
+Dosadíme zpět:
+
+$$\frac{\tfrac{1}{x} - \tfrac{1}{3}}{x - 3}
+= \frac{\tfrac{3 - x}{3x}}{x - 3}
+= \frac{3 - x}{3x(x - 3)}$$
+
+Pozor: $3 - x = -(x - 3)$, takže:
+
+$$\frac{3 - x}{3x(x - 3)} = \frac{-(x - 3)}{3x(x - 3)} = -\frac{1}{3x}$$
+
+(pro $x \neq 3$)
+
+---
+
+### 4) Výpočet limity
+Teď už můžeme spočítat limitu:
+
+$$\lim_{x \to 3} -\frac{1}{3x} = -\frac{1}{3 \cdot 3} = -\frac{1}{9}$$
+
+---
+
+✅ **Výsledek:**
+$$\boxed{\lim_{x \to 3} \frac{\tfrac{1}{x} - \tfrac{1}{3}}{x - 3} = -\tfrac{1}{9}}$$
