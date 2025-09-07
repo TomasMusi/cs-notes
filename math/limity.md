@@ -355,3 +355,14 @@ $$f(x) =
 - Když $x \to 0^-$ (zleva), $f(x) \to 1$.
 - Když $x \to 0^+$ (zprava), $f(x) \to 2$.
 - Limita v $0$ neexistuje, protože zleva a zprava dostaneme jiné výsledky.
+
+### Limita v nekonečnu
+
+Můžeme se ptát, co se děje, když $x$ roste do nekonečna.
+
+**Příklad:**
+
+$$f(x) = \frac{1}{x}$$
+
+- pro $x \to \infty$, graf klesá k $0$.
+- říkáme $\lim_{x \to \infty} \tfrac{1}{x} = 0$.
