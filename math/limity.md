@@ -199,7 +199,7 @@ $$\frac{\sqrt{9} - 3}{9 - 9} = \frac{3 - 3}{0} = \frac{0}{0}$$
 
 Pravidlo:  
 
-\[(\sqrt{a} - \sqrt{b})(\sqrt{a} + \sqrt{b}) = a - b\]
+$$(\sqrt{a} - \sqrt{b})(\sqrt{a} + \sqrt{b}) = a - b$$
 
 Vynásobíme čitatel i jmenovatel výrazem $(\sqrt{x} + 3)$:
 
