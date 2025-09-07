@@ -108,7 +108,7 @@ $$\frac{3^3-27}{3-3}=\frac{27-27}{0}=\frac{0}{0}$$
 
 **Pozor, správný vzorec je:**
 
-$\boxed{a^3 - b^3 = (a-b)\,(a^2+ab+b^2)}$
+$$\boxed{a^3 - b^3 = (a-b)\cdot(a^2+ab+b^2)}$$
 
 Použijeme jej pro \(a=x,\; b=3\):
 
