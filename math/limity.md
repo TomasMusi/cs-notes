@@ -140,12 +140,16 @@ $$\boxed{\lim_{x \to 3} \frac{x^3 - 27}{x - 3} = 27}$$
 
 Chci limitu, když $x \to 3$:
 
-$$\lim_{x \to 3} \frac{\tfrac{1}{x} - \tfrac{1}{3}}{x - 3}$$
+$$
+\lim_{x \to 3} \frac{\tfrac{1}{x} - \tfrac{1}{3}}{x - 3}
+$$
 
 ---
 
 ### 1) Přímé dosazení
-$$\frac{\tfrac{1}{3} - \tfrac{1}{3}}{3 - 3} = \frac{0}{0}$$
+$$
+\frac{\tfrac{1}{3} - \tfrac{1}{3}}{3 - 3} = \frac{0}{0}
+$$  
 → **nedefinováno**, musíme upravit.
 
 ---
@@ -153,31 +157,38 @@ $$\frac{\tfrac{1}{3} - \tfrac{1}{3}}{3 - 3} = \frac{0}{0}$$
 ### 2) Úprava čitatele – společný jmenovatel
 V čitateli je rozdíl zlomků, dáme je na společný jmenovatel:
 
-$$\frac{1}{x} - \frac{1}{3} = \frac{3 - x}{3x}$$
+$$
+\frac{1}{x} - \frac{1}{3} = \frac{3 - x}{3x}
+$$
 
 ---
 
 ### 3) Úprava celého výrazu
 Dosadíme zpět:
 
-$$\frac{\tfrac{1}{x} - \tfrac{1}{3}}{x - 3}
+$$
+\frac{\tfrac{1}{x} - \tfrac{1}{3}}{x - 3}
 = \frac{\tfrac{3 - x}{3x}}{x - 3}
-= \frac{3 - x}{3x(x - 3)}$$
+= \frac{3 - x}{3x \cdot (x - 3)}
+$$
 
-Pozor: $3 - x = -(x - 3)$, takže:
+A teď využijeme, že $3 - x = -(x - 3)$:
 
-$$\frac{3 - x}{3x(x - 3)} = \frac{-(x - 3)}{3x(x - 3)} = -\frac{1}{3x}$$
-
+$$
+\frac{3 - x}{3x \cdot (x - 3)} = \frac{-(x - 3)}{3x \cdot (x - 3)} = -\frac{1}{3x}
+$$  
 (pro $x \neq 3$)
 
 ---
 
 ### 4) Výpočet limity
-Teď už můžeme spočítat limitu:
-
-$$\lim_{x \to 3} -\frac{1}{3x} = -\frac{1}{3 \cdot 3} = -\frac{1}{9}$$
+$$
+\lim_{x \to 3} -\frac{1}{3x} = -\frac{1}{3 \cdot 3} = -\frac{1}{9}
+$$
 
 ---
 
 ✅ **Výsledek:**
-$$\boxed{\lim_{x \to 3} \frac{\tfrac{1}{x} - \tfrac{1}{3}}{x - 3} = -\tfrac{1}{9}}$$
+$$
+\boxed{\lim_{x \to 3} \frac{\tfrac{1}{x} - \tfrac{1}{3}}{x - 3} = -\tfrac{1}{9}}
+$$
