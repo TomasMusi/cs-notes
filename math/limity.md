@@ -110,13 +110,13 @@ $$\frac{3^3-27}{3-3}=\frac{27-27}{0}=\frac{0}{0}$$
 
 $$\boxed{a^3 - b^3 = (a-b)\cdot(a^2+ab+b^2)}$$
 
-Použijeme jej pro \(a=x,\; b=3\):
+Použijeme jej pro $a = x,\; b = 3$:
 
 $$
 x^3-27=(x-3)(x^2+3x+9)
 $$
 
-Dosadíme do zlomku a pokrátíme \((x-3)\) (platí pro \(x\neq3\)):
+Dosadíme do zlomku a pokrátíme $(x-3)$ (platí pro $x \neq 3$):
 
 $$
 \frac{x^3-27}{x-3}=\frac{(x-3)(x^2+3x+9)}{x-3}=x^2+3x+9
@@ -133,5 +133,5 @@ $$
 
 ✅ **Výsledek:**
 $$
-\boxed{\lim_{x \to 3} \frac{x^3 - 27}{x - 3}=27}
+\boxed{\lim_{x \to 3} \frac{x^3 - 27}{x - 3} = 27}
 $$
