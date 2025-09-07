@@ -179,3 +179,58 @@ $$\lim_{x \to 3} -\frac{1}{3x} = -\frac{1}{3 \cdot 3} = -\frac{1}{9}$$
 
 ✅ **Výsledek:**
 $$\boxed{\lim_{x \to 3} \frac{\tfrac{1}{x} - \tfrac{1}{3}}{x - 3} = -\tfrac{1}{9}}$$
+
+
+### Příklad
+
+Chci limitu, když $x \to 9$:
+
+$$\lim_{x \to 9} \frac{\sqrt{x} - 3}{x - 9}$$
+
+---
+
+### 1) Přímé dosazení
+$$\frac{\sqrt{9} - 3}{9 - 9} = \frac{3 - 3}{0} = \frac{0}{0}$$  
+→ **nedefinováno**, musíme upravit.
+
+---
+
+### 2) Úprava pomocí *racionalizace* (násobení konjugovaným výrazem)
+
+Pravidlo:  
+
+\[(\sqrt{a} - \sqrt{b})(\sqrt{a} + \sqrt{b}) = a - b\]
+
+Vynásobíme čitatel i jmenovatel výrazem $(\sqrt{x} + 3)$:
+
+$$\frac{\sqrt{x} - 3}{x - 9} \cdot \frac{\sqrt{x} + 3}{\sqrt{x} + 3}
+= \frac{(\sqrt{x} - 3)(\sqrt{x} + 3)}{(x - 9)(\sqrt{x} + 3)}$$
+
+---
+
+### 3) Uplatníme vzorec $a^2 - b^2$
+$$(\sqrt{x} - 3)(\sqrt{x} + 3) = x - 9$$
+
+Tedy:
+
+$$\frac{(\sqrt{x} - 3)(\sqrt{x} + 3)}{(x - 9)(\sqrt{x} + 3)}
+= \frac{x - 9}{(x - 9)(\sqrt{x} + 3)}$$
+
+Pro $x \neq 9$ se $(x - 9)$ pokrátí:
+
+$$= \frac{1}{\sqrt{x} + 3}$$
+
+---
+
+### 4) Výpočet limity
+Teď už můžeme dosadit přímo:
+
+$$\lim_{x \to 9} \frac{1}{\sqrt{x} + 3} = \frac{1}{\sqrt{9} + 3} = \frac{1}{3 + 3} = \frac{1}{6}$$
+
+---
+
+✅ **Výsledek:**
+$$\boxed{\lim_{x \to 9} \frac{\sqrt{x} - 3}{x - 9} = \tfrac{1}{6}}$$
+
+
+## Limita a Graf
