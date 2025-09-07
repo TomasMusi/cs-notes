@@ -132,6 +132,4 @@ $$
 ---
 
 ✅ **Výsledek:**
-$$
-\boxed{\lim_{x \to 3} \frac{x^3 - 27}{x - 3} = 27}
-$$
+$$\boxed{\lim_{x \to 3} \frac{x^3 - 27}{x - 3} = 27}$$
