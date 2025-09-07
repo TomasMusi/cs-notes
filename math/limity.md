@@ -102,22 +102,22 @@ $$
 $$
 \frac{3^3-27}{3-3}=\frac{27-27}{0}=\frac{0}{0}
 $$
-→ **nedefinováno** ⇒ výraz upravíme.
+→ **nedefinováno** ⇒ výraz musíme upravit.
 
 ---
 
 ### 2) Rozklad pomocí rozdílu třetích mocnin
 
-**Pozor, správný vzorec je zvýrazněně:**
+**Pozor, správný vzorec je:**
 
 \[
-\boxed{\;a^3-b^3=(a-b)\,(a^2+ab+b^2)\;}
+\boxed{a^3-b^3=(a-b)\,(a^2+ab+b^2)}
 \]
 
 Použijeme jej pro \(a=x,\; b=3\):
 
 $$
-x^3-27=(x-3)\,(x^2+3x+9)
+x^3-27=(x-3)(x^2+3x+9)
 $$
 
 Dosadíme do zlomku a pokrátíme \((x-3)\) (platí pro \(x\neq3\)):
@@ -130,12 +130,12 @@ $$
 
 ### 3) Výpočet limity
 $$
-\lim_{x\to3}(x^2+3x+9)=3^2+3\cdot3+9=9+9+9=27
+\lim_{x \to 3}(x^2+3x+9)=3^2+3\cdot3+9=9+9+9=27
 $$
 
 ---
 
 ✅ **Výsledek:**
 $$
-\boxed{\;\displaystyle \lim_{x \to 3} \frac{x^3 - 27}{x - 3}=27\;}
+\boxed{\lim_{x \to 3} \frac{x^3 - 27}{x - 3}=27}
 $$
