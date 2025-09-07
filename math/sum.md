@@ -16,6 +16,31 @@ To znamená:
 - $n$ – kde končím (horní index). Tady u čísla $n$.
 - $a_i$ – obecný **člen součtu** (může to být číslo, výraz, mocnina, zlomek…).
 
+### Co je to obecný člen $a_i$?
+
+### 1) Nejjednodušší člen
+Pokud $a_i = i$, pak suma znamená:
+
+$$\sum_{i=1}^{5} i = 1 + 2 + 3 + 4 + 5$$
+
+👉 obecný člen je jen „vezmi číslo $i$“.
+
+### 2) Mocniny
+Pokud $a_i = i^2$, pak:
+
+$$\sum_{i=1}^{4} i^2 = 1^2 + 2^2 + 3^2 + 4^2$$
+
+👉 obecný člen je „vezmi číslo $i$ a umocni ho na druhou“.
+
+---
+
+### 3) Zlomky
+Pokud $a_i = \tfrac{1}{i}$, pak:
+
+$$\sum_{i=1}^{4} \frac{1}{i} = \frac{1}{1} + \frac{1}{2} + \frac{1}{3} + \frac{1}{4}$$
+
+👉 obecný člen je „vezmi převrácenou hodnotu čísla \(i\)“.
+
 ### Příklad 1
 
 $$\sum_{i=1}^{5} i$$
