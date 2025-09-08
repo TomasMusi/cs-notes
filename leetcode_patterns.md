@@ -135,3 +135,15 @@ S tabulkami s přímým přístupem máme na levé straně zobrazený univerzum 
 S hash tabulkami je prostorová náročnost je big o K = O(k). Kde K je počet klíčů. Abychom toho dosáhli, zavádíme hash funkci, která mapuje klíče na místo v tabulce, která obsahuje data. Protože náš vesmír klíčů již není neomezený. Je možné, že hashování dvou různých klíčů může vést ke stejné hodnotě, což se nazývá kolize. Jednou z metod, jak vyřešit kolize, je tzv. chaining.
 
 ![direct-access-tables1.png](pictures/direct-hash-tables1.png)
+
+Pro podporu chainingu zavádíme linked listy a naše tabulkové pozice se stávají (bucket of values). Abychom udrželi vyhledávání co nejblíže big o One O(1), potřebujeme hash, který maximalizuje náhodnost a produkuje co nejméně kolizí. 
+
+Zde je několik příkladů:
+
+- division
+- multiplication
+- universal hashing
+- dynamic perfect hashing
+- static perfect hashing    
+
+![Chaining-HashTable](pictures/chaining-HashTable.png)
