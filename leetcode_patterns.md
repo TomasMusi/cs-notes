@@ -117,3 +117,21 @@ Lineární datové struktury, jako jsou arraye, linked-listy, stringy. Silným n
 Například v seřazeném arrayi posunutí pointeru doprava zajistí, že se vždy posunete k větší nebo stejné hodnotě, což usnadňuje porovnání hodnot u obou pointerů. 
 
 Dalším silným indikátorem toho, že problém lze vyřešit pomocí dvou pointerů, je situace, kdy se výslovně požaduje dvojice hodnot, které splňují podmínku, nebo výsledek, který lze vygenerovat ze dvou hodnot.
+
+## 3) HashMap (dict).
+
+### Co to je?
+
+Hash tables jsou datové struktury, které představují dynamický soubor dat. Hash tables podporují operace vkládání, mazání a vyhledávání. Hash tables vynikají zejména při vyhledávání, protože mají průměrnou dobu vyhledávání O(1), i když v nejhorším případě se tato doba zhoršuje na O(n). Termín hash table se někdy používá zaměnitelně s termínem dictionary. 
+
+Dictionaries představují obecný způsob mapování klíčů.  
+
+Implementace dictionary v podobě hash tabulky pomocí hash funkce. 
+
+S tabulkami s přímým přístupem máme na levé straně zobrazený univerzum klíčů. Některé klíče jsou používány a odkazují na data. S tabulkami s přímým přístupem jsou operace vkládání, mazání a vyhledávání časově konstantní. Jinými slovy, tabulka s přímým přístupem je array a pokud potřebujete reprezentovat každý klíč v univerzu, říkáme, že U je neomezené a jeho uložení do paměti je nepraktické.
+
+![direct-access-tables2.png](pictures/direct-access-tables2.png)
+
+S hash tabulkami je prostorová náročnost je big o K = O(k). Kde K je počet klíčů. Abychom toho dosáhli, zavádíme hash funkci, která mapuje klíče na místo v tabulce, která obsahuje data. Protože náš vesmír klíčů již není neomezený. Je možné, že hashování dvou různých klíčů může vést ke stejné hodnotě, což se nazývá kolize. Jednou z metod, jak vyřešit kolize, je tzv. chaining.
+
+![direct-access-tables1.png](pictures/direct-hash-tables1.png)
