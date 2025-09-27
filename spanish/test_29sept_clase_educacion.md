@@ -11,7 +11,7 @@
   - **enseñar** – vyučovat  
   - **el/la estudiante** – student/ka  
   - **estudiar** – studovat  
-  - **aprender** – učit se  
+  - **aprender** – naučit se  
   - **el compañero, la compañera de clase** – spolužák, spolužačka  
 
 - **La universidad** – univerzita  
