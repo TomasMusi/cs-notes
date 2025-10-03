@@ -3,6 +3,7 @@
 - Otevřená platforma, pro vývoj, distribuci a provoz aplikací.
 - Umožňuje oddělit aplikace od infrastruktury, což nám umožní software dodávat rychleji.
 - Zkracuje dobu mezi napsáním kodu a jeho spuštěním v produkčním prostředí.
+- **Zlehčuje process sdílení kodu.**
 
 ## Platforma Docker
 
@@ -11,7 +12,7 @@
 - Kontejnery můžeme sdílet během práce a mít jistotu, že všichni s nimiž je sdílíme, dostanou stejný kontejner, který funguje stejným způsobem.
 - **kontejnerizační platforma** - balí aplikace do izolovaných prostředí.
 
-## Images
+## Docker Images
 
 - Images si můžeme představit jako recept, obsahuje všechny ingredience a instrukce.
 - Docker Images Obsahují:
@@ -21,7 +22,12 @@
 
 Nyní však potřebujeme něco co nám náš kod spustí..... **Docker Container**
 
-## Cyklus Kontejneru
+## Docker Container
+
+- Docker container je jako skutečné jídlo, které je uděláno z našeho předešlého receptu.
+- Fascinující věcí je to, že pomocí jedné *Docker Image* jsme schopni udělat **několik** containerů.
+
+### Cyklus Containeru
 
 - **1. Vývoj** -> Vytvoření Dockerfile.
 - **2. Build** -> Sestavení image z Dockerfile.
