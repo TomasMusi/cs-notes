@@ -6,7 +6,7 @@ Zkratka redis znamená: **RE**mote **DI**ctionary **S**erver:
 
 - Key-value databáze → něco jako velký slovník/hashmap.
 
-- Podporuje komplexní datové struktury: řetězce, hashe, seznamy, množiny, seřazené množiny, streamy, bitmapy, hyperloglogy, geolokační indexy.
+- Podporuje komplexní datové struktury: řetězce, hashe, seznamy, množiny, seřazené množiny
 
 - Používá se často jako cache, databáze nebo message broker.
 
