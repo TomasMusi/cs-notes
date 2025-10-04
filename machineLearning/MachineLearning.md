@@ -77,10 +77,10 @@ Jinými slovy, model nemá žádné vodítko, jak jednotlivé údaje kategorizov
 Běžně používaný unsupervised learning model využívá techniku zvanou **clustering**.  
 Model vyhledává datové body, které vytvářejí přirozené seskupení.
 
-![clustering02](pictures/clustering-02.png)  
+![clustering02](../pictures/clustering-02.png)  
 **Obrázek 1**. Model ML seskupující podobné datové body.
 
-![clustering04](pictures/clustering-04.png)  
+![clustering04](../pictures/clustering-04.png)  
 **Obrázek 2**. Skupiny clusterů s přirozenými hranicemi.
 
 ---
@@ -97,10 +97,10 @@ Clustering se liší od **classification** tím, že **kategorie nejsou předem 
 Unsupervised model může seskupit dataset o **počasí** na základě teploty a odhalit segmentace, které odpovídají **ročním obdobím**.  
 Poté můžete **pojmenovat clustery** na základě svého porozumění datům.
 
-![clusteirng01](pictures/clustering-01.png)  
+![clusteirng01](../pictures/clustering-01.png)  
 **Obrázek 3**. Model ML seskupující podobné meteorologické vzorce.
 
-![clustering03](pictures/clustering-03.png)  
+![clustering03](../pictures/clustering-03.png)  
 **Obrázek 4**. Clustery meteorologických jevů označené jako:  
 - sníh  
 - déšť se sněhem  
