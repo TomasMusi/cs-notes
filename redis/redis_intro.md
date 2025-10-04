@@ -30,4 +30,4 @@ Zkratka redis znamená: **RE**mote **DI**ctionary **S**erver:
 - Komplexní relační dotazy nebo JOINy (na to je SQL).
 
 
-![RedisExplanation](../pictures/redisExplanation.png)  
+![RedisExplanation](../pictures/redisExplanation.png) 
