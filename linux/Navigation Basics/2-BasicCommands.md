@@ -1,4 +1,3 @@
-cat <<'EOF' > zaklady_linux_navigace.md
 # 🐧 Základy navigace v systému Linux
 
 - Navigace v Linuxu využívá jednoduché příkazy k pohybu a správě souborů.  
