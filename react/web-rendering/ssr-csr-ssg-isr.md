@@ -51,7 +51,7 @@ Než se můžeme kouknout na to, jaký způsob zvolit, musíme nejprve porozumě
 - Pro static content: blog, dokumentace, stránky, kde se moc nemění data.
 
 **Výhody/Nevýhody**
-- Výhody: Velmi rychlý, minimáální práce na straně serveru, Cache
+- Výhody: Velmi rychlý, minimální práce na straně serveru, Cache
 - Nevýhody: Nevhodný pro dynamické nebo často měnící se data, dlouho trvá buildnout pro větší stránky.
 
 ## ISR - Incremental Static Regeneration
