@@ -1,4 +1,3 @@
-cat <<'EOF' > vim_editor.md
 # 🧠 Vim – An Essential Tool for Editing Files
 
 - **Vim (Vi Improved)** je výkonný a flexibilní textový editor používaný v systémech typu Unix.  
