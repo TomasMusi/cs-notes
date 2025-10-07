@@ -28,3 +28,6 @@
 - `/run` – Data běžících procesů a služeb.  
 - `/proc` – Virtuální souborový systém s informacemi o procesech.  
 - `/sys` – Informace o zařízení a jádru systému.  
+
+
+![linuxHiearchy](../../pictures/linux-filesystem.png)  
