@@ -18,4 +18,13 @@
 - `/usr` – Uživatelské programy a data.  
 - `/lib` – Sdílené knihovny.  
 - `/tmp` – Dočasné soubory.  
-- `/opt` – Aplikace třetích stran.
+- `/opt` – Aplikace třetích stran.  
+- `/boot` – Soubory potřebné pro zavedení systému (kernel, bootloader).  
+- `/dev` – Zařízení reprezentující hardware.  
+- `/media` – Automaticky připojená vyměnitelná média (USB, CD).  
+- `/mnt` – Dočasně připojené souborové systémy.  
+- `/root` – Domovský adresář uživatele root.  
+- `/srv` – Data poskytovaná službami.  
+- `/run` – Data běžících procesů a služeb.  
+- `/proc` – Virtuální souborový systém s informacemi o procesech.  
+- `/sys` – Informace o zařízení a jádru systému.  
