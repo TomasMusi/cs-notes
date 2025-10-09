@@ -9,3 +9,7 @@ Pomocí příkazu ```tail /var/log/auth.log``` můžete zobrazit poslední zázn
 Pravidelná analýza protokolů je nezbytná pro monitorování bezpečnosti serveru.  
 
 Zde je příklad, jak můžete pomocí příkazu ```tail``` zobrazit posledních několik záznamů protokolu ověřování:  
+
+```BASH
+tail /var/log/auth.log
+```
