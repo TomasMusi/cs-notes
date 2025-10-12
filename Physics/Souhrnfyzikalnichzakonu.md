@@ -1,4 +1,4 @@
-# Fyzika - Newtonův první pohybový zákon
+# Newtonův první pohybový zákon
 
 ## Definice
 Newtonův první pohybový zákon, známý také jako **zákon setrvačnosti**, říká, že:
@@ -33,7 +33,7 @@ zatímco **hladší povrchy** mají menší tendenci vytvářet velké tření, 
 které mohou tření způsobovat.
 
 
-# Fyzika - Newtonův druhý pohybový zákon
+# Newtonův druhý pohybový zákon
 
 ## Definice
 Newtonův druhý pohybový zákon v matematických termínech říká, že:
@@ -60,7 +60,7 @@ Zároveň se pohybující objekt, který je **těžký a rychle nabírá rychlos
 Stejný zákon také znamená, že **lehčí objekty se mohou pohybovat rychleji než těžší objekty**, když je na ně vyvíjena **stejná síla**.
 
 
-# Fyzika - Newtonův třetí pohybový zákon
+# Newtonův třetí pohybový zákon
 
 ## Definice
 Každá akce vyvolává **stejnou a opačnou reakci**.  
@@ -91,7 +91,7 @@ Zvláštní na tom je, že tento zákon platí i pro **objekty, které nejsou v 
 
 
 
-# Fyzika - Zákon univerzální gravitace (poslední Newtonův zákon)
+# Zákon univerzální gravitace (poslední Newtonův zákon)
 
 ## Definice
 Podle Newtona každá částice hmoty ve vesmíru přitahuje každou jinou částici silou,  
@@ -121,7 +121,7 @@ Naopak planety jako **Jupiter** jsou tak obrovské,
 že vytvářejí dostatečnou gravitaci, aby k sobě **přitahovaly více materiálu a plynu**.
 
 
-# Fyzika - Zachování energie
+# Zachování energie
 
 ## Definice
 Princip zachování energie říká, že **energie nemůže být vytvořena ani zničena**,  
@@ -163,3 +163,46 @@ ale pouze **přeměňují sluneční energii na použitelnou energii**.
 V tomto případě je **zachování energie** hrou na dávání a braní,  
 kde **vesmír neustále předává energii**, která existuje tak dlouho,  
 **jak existuje kosmos**.
+
+
+# Zákony termodynamiky
+
+## Nulový zákon termodynamiky
+Nulový zákon říká, že pokud jsou dvě věci v **tepelné rovnováze** s třetí věcí,  
+jsou v rovnováze i mezi sebou.  
+Je to konečný prostředník mezi dvěma různými systémy s odlišnými teplotními hodnotami,  
+který udržuje rovnováhu mezi dvěma teplotami v příslovečném boxerském ringu.
+
+---
+
+## První zákon termodynamiky
+První zákon termodynamiky je založený na **zákonu zachování energie**.  
+Energii **nelze vytvořit ani zničit**.  
+To tvoří základ pro pochopení přenosu tepla a toho,  
+jak se energie přeměňuje v různých termodynamických systémech.  
+Termodynamika je koneckonců studium toho, **jak teplo a energie fungují a pohybují se** v rámci systému.
+
+---
+
+## Druhý zákon termodynamiky
+Druhý zákon termodynamiky říká, že **část energie se stává pro práci nedostupnou**,  
+když je energie přenášena nebo přeměňována.  
+To je koncept **entropie**, množství neuspořádanosti nebo náhodnosti v rámci systému.  
+Zjednodušeně řečeno, **energie se v každém procesu ztrácí**,  
+ale **není zničena ani znehodnocena** v systému.  
+Když k tomu dojde, věci se stávají **chaotičtějšími**.
+
+První a druhý zákon termodynamiky společně vysvětlují,  
+proč jsou **perpetum mobile** nebo stroje, které se mohou pohybovat bez vnějšího zdroje energie, **nemožné**.  
+Porušuje to skutečnost, že **energii nelze vytvořit ani zničit**.  
+Navíc podle druhého zákona stroj nakonec ztratí energii **třením nebo teplem** a přestane se pohybovat.
+
+---
+
+## Třetí zákon termodynamiky
+Třetí zákon termodynamiky říká, že **dosažení absolutní nulové teploty je nemožné**,  
+to proto, že třetí zákon říká, že **entropie systému se také blíží nule**,  
+jakmile teplota systému dosáhne absolutní nuly.  
+Jak se blížíte nule, **náhodnost vysvětlená ve druhém zákoně také klesá**  
+a snižuje se na nulu, což **porušuje fyzikální zákony**,  
+protože druhý zákon říká, že systém bude mít vždy **entropii**.
