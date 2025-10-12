@@ -206,3 +206,84 @@ jakmile teplota systému dosáhne absolutní nuly.
 Jak se blížíte nule, **náhodnost vysvětlená ve druhém zákoně také klesá**  
 a snižuje se na nulu, což **porušuje fyzikální zákony**,  
 protože druhý zákon říká, že systém bude mít vždy **entropii**.
+
+
+# Fyzika - Maxwellovy rovnice
+
+## Definice
+Maxwellovy rovnice jsou základní rovnice, které popisují **chování a interakci elektrických a magnetických polí**.  
+Tyto rovnice lze považovat za dokonalý tahák, který vysvětluje, **jak funguje elektřina a magnety**.
+
+---
+
+## Gaussův zákon pro elektřinu
+Popisuje, **jak elektrické náboje vytvářejí neviditelné síly** zvané **elektrická pole**,  
+které mohou **tlačit nebo přitahovat jiné náboje**.
+
+---
+
+## Gaussův zákon pro magnetismus
+Popisuje, **jak pohybující se elektrické náboje** nebo **měnící se elektrická pole** mohou vytvářet **magnetická pole**.  
+Neviditelné oblasti kolem magnetu mohou **ovlivňovat jiné objekty** nebo **pohybovat náboji**, které také mají svá pole.
+
+---
+
+## Faradayův zákon indukce
+Říká, že **pohyb magnetu v blízkosti drátu** může způsobit **tok elektřiny v drátu**.  
+Elektřinu v drátu vytváříme jednoduše **pohybem magnetu** nebo **změnou magnetického pole**.  
+Přesně tak fungují **generátory**.
+
+---
+
+## Ampérův zákon v Maxwellově úpravě
+Říká, že **elektrický proud v jednom drátu** může vytvořit **magnetické pole**, které ho obklopuje.  
+Maxwell dodal, že **magnetická pole mohou být také vytvářena změnou elektrických polí**,  
+což nám umožňuje vidět širší souvislosti toho, **jak elektrická a magnetická pole vzájemně působí**.
+
+---
+
+## Shrnutí
+Tyto pojmy nám umožňují pochopit, **jak elektřina a magnetismus vzájemně působí**  
+a jak jsou propojeny v mnoha různých oblastech a technologiích,  
+jako jsou **komunikační zařízení, rozvodné sítě** a dokonce i **přístroje pro magnetickou rezonanci**.
+
+
+# Fyzika - Princip relativity
+
+## Vysvětlení
+Když jste v jedoucím autobusu a děláte se svými přáteli různé věci, jako například házení míčem,  
+vše se vám i ostatním v autobusu jeví jako normální,  
+ale pro někoho, kdo vás sleduje z chodníku, je vše rozmazané,  
+protože vidí pouze autobus jedoucí rychlostí 80 mil za hodinu.  
+Může vidět pohyb míče, ale ten se pohybuje téměř stejnou rychlostí jako autobus.  
+To je **princip relativity** v praxi.
+
+---
+
+## Definice
+Zjednodušeně řečeno, **princip relativity** říká,  
+že **fyzikální zákony jsou stejné pro všechny, bez ohledu na to, jak se pohybují**.  
+Ať už provádíte experiment ve vlaku nebo v kancelářské budově,  
+výsledky budou vždy stejné.  
+Díky tomuto principu je to rozhodčí, kdo udržuje vše spravedlivé v těžké fyzické soutěži.
+
+---
+
+## Paradox dvojčat
+Tento princip se uplatňuje v **paradoxu dvojčat**,  
+kde jedno dvojče zůstává na Zemi, zatímco druhé cestuje rychlostí blízkou rychlosti světla.  
+To, které zůstalo na Zemi, stárne stejným tempem,  
+zatímco to, které cestuje vesmírem, **stárne pomaleji**,  
+protože **čas se pro objekty pohybující se vysokou rychlostí zpomaluje**.  
+Takže v době, kdy se dvojče cestující vesmírem vrátí na Zemi,  
+bude **mladší než to, které zůstalo doma**.
+
+---
+
+## Shrnutí
+Ať už tedy stojíte na místě nebo se pohybujete rychlostí světla,  
+**princip relativity** říká, že stále musíte dodržovat stejná fyzikální pravidla jako všichni ostatní.  
+
+**VE FYZICE NEEXISTUJE ŽÁDNÉ ZVLÁŠTNÍ ZACHÁZENÍ.**
+
+
