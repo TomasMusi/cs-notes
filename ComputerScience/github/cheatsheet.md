@@ -1,6 +1,7 @@
-# STAGE & SNAPSHOT
-# Práce se snapshoty a Git staging area
+# STAGE & SNAPSHOT  
+### Práce se snapshoty a Git staging area
 
+```bash
 git status
 # zobrazí změněné soubory v pracovním adresáři, připravené pro další commit
 
@@ -18,12 +19,13 @@ git diff --staged
 
 git commit -m "[descriptive message]"
 # commitne staged obsah jako nový snapshot
-
----
+```
 
 # SETUP
-# Nastavení uživatelských informací napříč všemi lokálními repozitáři
 
+### Nastavení uživatelských informací napříč všemi lokálními repozitáři
+
+```BASH
 git config --global user.name "[firstname lastname]"
 # nastaví jméno, které bude identifikovatelné v historii commitů
 
@@ -32,12 +34,13 @@ git config --global user.email "[valid-email]"
 
 git config --global color.ui auto
 # nastaví automatické barevné zvýraznění pro přehlednost výpisů
-
----
+```
 
 # BRANCH & MERGE
-# Izolace práce v branchích, změna kontextu a slučování změn
 
+### Izolace práce v branchích, změna kontextu a slučování změn
+
+```BASH
 git branch
 # vypíše všechny branche, * označuje aktivní větev
 
@@ -52,23 +55,25 @@ git merge [branch]
 
 git log
 # zobrazí všechny commity v historii aktuální branche
-
----
+``` 
 
 # SETUP & INIT
-# Nastavení uživatele, inicializace a klonování repozitářů
 
+### Nastavení uživatele, inicializace a klonování repozitářů
+
+```BASH
 git init
 # inicializuje existující adresář jako Git repozitář
 
 git clone [url]
 # stáhne celý repozitář z hostované lokace přes URL
-
----
+```
 
 # INSPECT & COMPARE
-# Zkoumání logů, rozdílů a informací o objektech
 
+### Zkoumání logů, rozdílů a informací o objektech
+
+```BASH
 git log
 # zobrazí historii commitů pro aktuální branch
 
@@ -83,12 +88,13 @@ git diff branchB...branchA
 
 git show [SHA]
 # zobrazí jakýkoli objekt v Gitu v čitelné podobě
-
----
+```
 
 # SHARE & UPDATE
-# Získávání aktualizací z jiného repozitáře a aktualizace lokální kopie
 
+### Získávání aktualizací z jiného repozitáře a aktualizace lokální kopie
+
+```BASH
 git remote add [alias] [url]
 # přidá Git URL jako alias
 
@@ -103,12 +109,13 @@ git push [alias] [branch]
 
 git pull
 # stáhne a sloučí všechny commity z tracking remote branche
-
----
+```
 
 # TRACKING PATH CHANGES
-# Verze změn a mazání cest k souborům
 
+### Verze změn a mazání cest k souborům
+
+```BASH
 git rm [file]
 # smaže soubor z projektu a stageuje jeho odstranění pro commit
 
@@ -117,23 +124,25 @@ git mv [existing-path] [new-path]
 
 git log --stat -M
 # zobrazí log commitů s informacemi o přesunutých souborech
-
----
+```
 
 # REWRITE HISTORY
-# Přepisování branchí, aktualizace commitů a čištění historie
 
+### Přepisování branchí, aktualizace commitů a čištění historie
+
+```BASH 
 git rebase [branch]
 # aplikuje commity aktuální branche nad zadanou branch
 
 git reset --hard [commit]
 # vymaže staging area a přepíše pracovní strom podle zadaného commitu
-
----
+```
 
 # TEMPORARY COMMITS
-# Dočasné uložení změněných souborů pro přepnutí branchí
 
+### Dočasné uložení změněných souborů pro přepnutí branchí
+
+```BASH
 git stash
 # uloží změněné a staged soubory do dočasného úložiště
 
@@ -145,3 +154,4 @@ git stash pop
 
 git stash drop
 # odstraní změny z vrcholu stash zásobníku
+```
