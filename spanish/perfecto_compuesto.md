@@ -137,3 +137,55 @@ Hoy ... (levantarse, yo), ... (ducharse, yo) y después ... (ir, yo) a la Academ
 
 2. ... (poner, yo) música, ... (escribir, yo) cartas a mi familia, ... (abrir, yo) la ventana de la cocina y ... (freír, yo) pescado para mis amigos.  
 **Klíč:** He puesto, He escrito, He abierto, He freído
+
+
+
+# Alguna vez – zápisky
+
+## Význam
+**alguna vez** znamená **„někdy“** nebo **„už někdy“**  
+Používá se, když mluvíme o **zkušenostech v životě**.  
+Často se objevuje s časem **pretérito perfecto compuesto**  
+(he, has, ha, hemos, habéis, han + participio).
+
+---
+
+## Tvoření
+alguna vez = alguna + vez
+
+- **alguna** → ženský tvar od *alguno* (nějaký, nějaká)  
+- **vez** → podstatné jméno „čas“ nebo „případ“ (jedna událost)  
+
+Doslova: **„nějaký čas“ → „někdy“**
+
+---
+
+## Použití
+Používá se hlavně v otázkách a kladných větách, když se ptáme nebo říkáme,
+že se něco stalo **někdy v životě**.
+
+### Často ve větách:
+- ¿Has estado alguna vez en España?  
+  → Byl jsi někdy ve Španělsku?
+
+- No he comido nunca sushi, pero he probado alguna vez comida japonesa.  
+  → Nikdy jsem nejedl sushi, ale už jsem někdy ochutnal japonské jídlo.
+
+- He viajado alguna vez solo.  
+  → Cestoval jsem už někdy sám.
+
+---
+
+## Variace
+| Tvar | Význam | Poznámka |
+|------|----------|-----------|
+| **alguna vez** | někdy | jednou nebo jednou v životě |
+| **algunas veces** | několikrát | opakovaně |
+| **nunca / jamás** | nikdy | zápor, často odpověď na otázku s *alguna vez* |
+
+---
+
+## Shrnutí
+- **alguna vez** → někdy, už někdy  
+- Používá se s **pretérito perfecto**  
+- Vyjadřuje zkušenost, ne přesný čas  
