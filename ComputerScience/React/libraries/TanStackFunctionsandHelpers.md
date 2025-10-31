@@ -21,7 +21,7 @@ takže všechno, co následně definuješ (sloupce, accesory atd.), se řídí t
 
 Vytváří **data column** – sloupec, který automaticky čte konkrétní vlastnost z datových řádků.
 
-    ```TS
+```TS
         const columns = [
             columnHelper.accessor("name", {
                 header: "Name",
@@ -33,7 +33,7 @@ Vytváří **data column** – sloupec, který automaticky čte konkrétní vlas
         /*
         Toto je užitečné, když chceš automaticky řešit věci jako třídění, filtrování a seskupování.
         */
-    ``` 
+``` 
 
 ### columnHelper.display() 
     
@@ -90,13 +90,13 @@ Funkce, která říká tabulce, **jak vypočítat řádky** – z dat po všech 
 
 Vrací **buňky, které jsou aktuálně viditelné** v daném řádku – po aplikaci viditelnosti, seskupování nebo skrytí sloupců.
 
-    ```TSX
+```TSX
     {row.getVisibleCells().map(cell) => (
         <td key={cell.id}>
         {flexRender(cell.column.columnDef.cell, cell.getContext())}
         </td>
     )}
-    ```
+```
 
 ### getContext()
 
