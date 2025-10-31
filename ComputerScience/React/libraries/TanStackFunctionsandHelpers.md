@@ -39,7 +39,7 @@ Vytváří **data column** – sloupec, který automaticky čte konkrétní vlas
     
 Vytváří **non-data** sloupec – tedy takový, který neodpovídá žádné vlastnosti v datech.
 
-    ```TS 
+```TS 
         const columns = [
             columnhelper.display({
                 id: "actions",
@@ -50,13 +50,13 @@ Vytváří **non-data** sloupec – tedy takový, který neodpovídá žádné v
 
         // Ideální pro Buttons(Edit/Delete), Checkboxes, Serial numbers / row numbers, Custom Layouts.
         // Používá se, když sloupec přímo neodpovídá objektu s daty.
-    ```
+```
 
 ### columnHelper.group() 
 
 Používá se ke **skupinování více sloupců** pod jeden nadřazený header.
 
-    ```TS
+```TS
         const columns = [
             columnHelper.group({
                 header: "User info",
@@ -71,20 +71,20 @@ Používá se ke **skupinování více sloupců** pod jeden nadřazený header.
         /*
         Používá se pro vícestupňové záhlaví – např. v dashboardech nebo reportech.
         */
-    ```
+```
 
 ### getRowModel() 
 
 Funkce, která říká tabulce, **jak vypočítat řádky** – z dat po všech transformacích (filtrování, třídění, stránkování atd.).
 
-    ```TS
+```TS
     const table = useReactTable({
         data, 
         columns,
         getCoreRowModel: getCoreRowModel(),
     });
     /* Později můžeš nahradit např. getFilteredRowModel(), getSortedRowModel() atd. */
-    ```
+```
 
 ### getVisibleCells()
 
@@ -103,7 +103,7 @@ Vrací **buňky, které jsou aktuálně viditelné** v daném řádku – po apl
 Každý header nebo cell má svůj **context objekt**,
 který obsahuje vše potřebné – data řádku, informace o sloupci, stav tabulky atd.
 
-    ```TS
+```TS
     flexRender(header.column.columnDef.header, header.getContext())
 
     /*
@@ -111,19 +111,19 @@ který obsahuje vše potřebné – data řádku, informace o sloupci, stav tabu
     Zajišťuje, že renderovací funkce dostanou správné hodnoty a metadata.
     Bez contextu by TanStack nevěděl, kterou buňku nebo řádek vykresluješ.
     */
-    ```
+```
 
 ### flexRender()
 
 Univerzální renderer pro jakýkoli obsah ve sloupci nebo buňce –
 ať už je to string, React komponenta nebo funkce.
 
-    ```TS
+```TS
     {flexRender(cell.column.columnDef.cell, cell.getContext())}
 
     /* Pokud byl tvůj cell definován takto: */
 
     cell: (info) => <strong>{info.getValue()}</strong>
     // Pak flexRender tuto funkci správně vykoná.
-    ```
+```
 
