@@ -76,9 +76,10 @@ Proto sinus, kosinus a tangens **závisí jen na úhlu, ne na velikosti trojúhe
 
 | Funkce    | Vzorec                                                 | Co spojuje            | Použij, když znáš… | A chceš…                             |
 | --------- | ------------------------------------------------------ | --------------------- | ------------------ | ------------------------------------ |
-| **sin α** | \( \sin α = \frac{\text{protilehlá}}{\text{přepona}} \)  | protilehlou a přeponu | úhel + přeponu     | protilehlou                          |
-| **cos α** | \( \cos α = \frac{\text{přilehlá}}{\text{přepona}} \)    | přilehlou a přeponu   | úhel + přeponu     | přilehlou                            |
-| **tan α** | \( \tan α = \frac{\text{protilehlá}}{\text{přilehlá}} \) | obě odvěsny           | úhel + přilehlou   | protilehlou *(nepotřebuješ přeponu)* |
+| **sin α** | $$\sin(α) = \frac{\text{protilehlá}}{\text{přepona}}$$  | protilehlou a přeponu | úhel + přeponu     | protilehlou                          |
+| **cos α** | $$\cos(α) = \frac{\text{přilehlá}}{\text{přepona}}$$    | přilehlou a přeponu   | úhel + přeponu     | přilehlou                            |
+| **tan α** | $$\tan(α) = \frac{\text{protilehlá}}{\text{přilehlá}}$$ | obě odvěsny           | úhel + přilehlou   | protilehlou *(nepotřebuješ přeponu)* |
+
 
 ---
 
