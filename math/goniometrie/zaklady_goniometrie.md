@@ -22,7 +22,7 @@ dokážeme vypočítat jeho přeponu či odvěsnu, pokud známe dvě strany.
 
 - **Pro odvěsnu:**
 
-  $$ b = \sqrt{c^2 - a^2} $$
+$$ b = \sqrt{c^2 - a^2} $$
 
 *Přepona je vždy nejdelší strana trojúhelníku.*
 
