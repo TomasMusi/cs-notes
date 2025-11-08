@@ -17,9 +17,11 @@ dokážeme vypočítat jeho přeponu či odvěsnu, pokud známe dvě strany.
 ### Vzorce:
 
 - **Pro přeponu:**
+
   $$ c = \sqrt{a^2 + b^2} $$
 
 - **Pro odvěsnu:**
+
   $$ b = \sqrt{c^2 - a^2} $$
 
 *Přepona je vždy nejdelší strana trojúhelníku.*
