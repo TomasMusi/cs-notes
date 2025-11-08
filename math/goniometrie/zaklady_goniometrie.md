@@ -109,8 +109,7 @@ $$
 \tan(α) = \frac{\text{protilehlá}}{\text{přilehlá}}
 $$
 
-Dosadíme:
-$$ \tan(30°) = \frac{a}{50} $$
+Dosadíme: $$\tan(30°) = \frac{a}{50}$$
 
 $$
 a = 50 \cdot \tan(30°)
@@ -146,9 +145,4 @@ $$
 
 **Použitý vztah:**  
 $$\tan(α) = \frac{\text{protilehlá}}{\text{přilehlá}}$$
-
-
-
-musíš používat něco takovyho: 
-$$1 + 2 + 3 + \dots + n = \frac{n(n+1)}{2}$$
 
