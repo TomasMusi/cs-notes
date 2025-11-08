@@ -55,10 +55,8 @@ a úhly **37°, 53°, 90°**
 Velký trojúhelník má stejné úhly (37°, 53°, 90°),  
 ale strany třeba **6, 8, 10**.
 
-📏 Poměr:  
-$$
-\frac{6}{3} = \frac{8}{4} = \frac{10}{5} = 2
-$$
+Poměr:  
+$$\frac{6}{3} = \frac{8}{4} = \frac{10}{5} = 2$$
 
 Druhý trojúhelník je **dvakrát větší**, ale **tvar je stejný**.
 
@@ -111,9 +109,7 @@ $$
 $$
 
 Dosadíme:
-$$
-\tan(30°) = \frac{a}{50}
-$$
+$$ \tan(30°) = \frac{a}{50} $$
 
 $$
 a = 50 \cdot \tan(30°)
@@ -148,14 +144,10 @@ $$
 ---
 
 **Použitý vztah:**  
-$$
-\tan(α) = \frac{\text{protilehlá}}{\text{přilehlá}}
-$$
+$$\tan(α) = \frac{\text{protilehlá}}{\text{přilehlá}}$$
 
 
 
 musíš používat něco takovyho: 
-$$
-1 + 2 + 3 + \dots + n = \frac{n(n+1)}{2}
-$$
+$$1 + 2 + 3 + \dots + n = \frac{n(n+1)}{2}$$
 
