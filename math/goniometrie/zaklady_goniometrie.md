@@ -17,14 +17,14 @@ dokážeme vypočítat jeho přeponu či odvěsnu, pokud známe dvě strany.
 ### Vzorce:
 
 - **Pro přeponu:**
-  \[
+  $$
   c = \sqrt{a^2 + b^2}
-  \]
+  $$
 
 - **Pro odvěsnu:**
-  \[
+  $$
   b = \sqrt{c^2 - a^2}
-  \]
+  $$
 
 *Přepona je vždy nejdelší strana trojúhelníku.*
 
@@ -58,9 +58,9 @@ Velký trojúhelník má stejné úhly (37°, 53°, 90°),
 ale strany třeba **6, 8, 10**.
 
 📏 Poměr:  
-\[
-6/3 = 8/4 = 10/5 = 2
-\]
+$$
+\frac{6}{3} = \frac{8}{4} = \frac{10}{5} = 2
+$$
 
 Druhý trojúhelník je **dvakrát větší**, ale **tvar je stejný**.
 
@@ -108,29 +108,29 @@ Chci zjistit výšku stromu (odvěsnu naproti úhlu).
 ---
 
 ## Použití tangensu:
-\[
+$$
 \tan(α) = \frac{\text{protilehlá}}{\text{přilehlá}}
-\]
+$$
 
 Dosadíme:
-\[
+$$
 \tan(30°) = \frac{a}{50}
-\]
+$$
 
-\[
+$$
 a = 50 \cdot \tan(30°)
-\]
+$$
 
 ---
 
 ## Výpočet:
-\[
+$$
 \tan(30°) = \frac{1}{\sqrt{3}} \approx 0{,}577
-\]
+$$
 
-\[
+$$
 a = 50 \cdot 0{,}577 = 28{,}9\,\text{m}
-\]
+$$
 
 ---
 
@@ -150,10 +150,14 @@ a = 50 \cdot 0{,}577 = 28{,}9\,\text{m}
 ---
 
 **Použitý vztah:**  
-\[
+$$
 \tan(α) = \frac{\text{protilehlá}}{\text{přilehlá}}
-\]
+$$
 
 
 
+musíš používat něco takovyho: 
+$$
+1 + 2 + 3 + \dots + n = \frac{n(n+1)}{2}
+$$
 
