@@ -27,11 +27,11 @@ Po **360°** (nebo $$\(2\pi\)$$ radiánech) se průběh funkce zcela opakuje.
 
 - **Sinus je funkce lichá.**
   - Lichost znamená **středovou souměrnost podle počátku souřadnic**.
-  - Platí: $$ \sin(-x) = -\sin(x) $$
+  - Platí: $$\sin(-x) = -\sin(x)$$
 
 - **Kosinus je funkce sudá.**
   - Sudost znamená **souměrnost podle osy y**.
-  - Platí: $$ \cos(-x) = \cos(x) $$
+  - Platí: $$\cos(-x) = \cos(x)$$
 
 ---
 
