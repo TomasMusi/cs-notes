@@ -13,13 +13,13 @@ Po uplynutí této periody se funkce zcela opakuje.
 
 ## 2. Graf sinusové funkce
 
-[FOTKA SINUSU]  
-[GIF SINUSU JAK OBÍHÁ]
+[FOTKA_SINUSU](../pictures/sin1.png)  
+[GIF_SINUSU](../pictures/Sinus-visualisation.gif)
 
 Hodnoty funkce **sin(x)** se pohybují **mezi -1 a 1**.  
 Tento rozsah odpovídá tzv. **jednotkové kružnici**.
 
-Po **360°** (nebo \(2\pi\) radiánech) se průběh funkce zcela opakuje.
+Po **360°** (nebo $$\(2\pi\)$$ radiánech) se průběh funkce zcela opakuje.
 
 ---
 
@@ -27,13 +27,11 @@ Po **360°** (nebo \(2\pi\) radiánech) se průběh funkce zcela opakuje.
 
 - **Sinus je funkce lichá.**
   - Lichost znamená **středovou souměrnost podle počátku souřadnic**.
-  - Platí:  
-    $$ \sin(-x) = -\sin(x) $$
+  - Platí: $$ \sin(-x) = -\sin(x) $$
 
 - **Kosinus je funkce sudá.**
   - Sudost znamená **souměrnost podle osy y**.
-  - Platí:  
-    $$ \cos(-x) = \cos(x) $$
+  - Platí: $$ \cos(-x) = \cos(x) $$
 
 ---
 
@@ -44,7 +42,7 @@ Po **360°** (nebo \(2\pi\) radiánech) se průběh funkce zcela opakuje.
 | **cos(x)** | osa x (vodorovná) | určuje vodorovnou složku pohybu |
 | **sin(x)** | osa y (svislá) | určuje svislou složku pohybu |
 
-[FOTKA KOSINU]
+[FOTKA_KOSINU](../pictures/kosinus.png)
 
 ---
 
@@ -73,5 +71,5 @@ Po **360°** (nebo \(2\pi\) radiánech) se průběh funkce zcela opakuje.
 
 - **Sinus** – lichá funkce, osa y, hodnoty od –1 do 1.  
 - **Kosinus** – sudá funkce, osa x, hodnoty od –1 do 1.  
-- **Perioda obou funkcí**: \(360°\) nebo \(2\pi\) rad.  
+- **Perioda obou funkcí**: $$\(360°\)$$ nebo $$\(2\pi\)$$ rad.  
 - Obě funkce se pravidelně opakují a jsou základem pro popis **periodických jevů** (např. vlnění, kruhový pohyb, střídavý proud).
