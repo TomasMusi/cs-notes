@@ -13,8 +13,8 @@ Po uplynutí této periody se funkce zcela opakuje.
 
 ## 2. Graf sinusové funkce
 
-[FOTKA_SINUSU](../pictures/sin1.png)  
-[GIF_SINUSU](../pictures/Sinus-visualisation.gif)
+![fotkasinus](../pictures/sin1.png)  
+![gifsunus](../pictures/Sinus-visualisation.gif)
 
 Hodnoty funkce **sin(x)** se pohybují **mezi -1 a 1**.  
 Tento rozsah odpovídá tzv. **jednotkové kružnici**.
@@ -42,7 +42,7 @@ Po **360°** (nebo $$\(2\pi\)$$ radiánech) se průběh funkce zcela opakuje.
 | **cos(x)** | osa x (vodorovná) | určuje vodorovnou složku pohybu |
 | **sin(x)** | osa y (svislá) | určuje svislou složku pohybu |
 
-[FOTKA_KOSINU](../pictures/kosinus.png)
+![FOTKA_KOSINU](../pictures/kosinus.png)
 
 ---
 
